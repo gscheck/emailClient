@@ -1,0 +1,44 @@
+<div fxFlex="row" fxLayoutAlign="center center" fxLayoutGap="10px" class="header">
+  <button mat-icon-button (click)="sidenav.toggle();">
+    <mat-icon>menu</mat-icon>
+  </button>
+
+  <span>{{headerTitle}}</span>
+  <span class="spacer"></span>
+
+  <mat-toolbar-row style="padding: 0 2px;background-color:white;border-radius: 25px; height: 45px;">
+			<button class="search-icon" mat-icon-button disabled>
+        <mat-icon class="search-icon">search</mat-icon>
+      </button>
+      <mat-form-field [ngStyle]="{'font-size.px': 12}">
+        <input 
+          matInput
+          class="search-control" 
+        type="text"
+        (keyup.enter)="appendSearchParam()"
+        placeholder="Search" 
+        [(ngModel)]="searchText">
+      </mat-form-field>
+      
+      <button mat-button mat-icon-button (click)="cancelSearch()">
+        <mat-icon class="search-icon">close</mat-icon>
+      </button> 
+  </mat-toolbar-row>
+  <span class="spacer"></span>
+
+
+  <div class="example-button-row">
+    <button mat-icon-button
+      *ngFor="let navButton of navButtons"
+      (click)="navigateToPage(navButton.routerLink)"
+      [matTooltip]="navButton.displayName">
+      <mat-icon>{{navButton.materialIcon}}</mat-icon>
+    </button>
+  </div>
+  <button mat-icon-button
+      (click)="logOut()"
+      matTooltip="Log out">
+      <mat-icon>account_circle</mat-icon>
+    </button>
+</div>
+

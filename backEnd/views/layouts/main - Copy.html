@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  <link rel="stylesheet" href="style2.css">
+  <script>
+	function openTab(evt, boxType) {
+	  // Declare all variables
+	  var i, tabcontent, tablinks;
+
+	  // Get all elements with class="tabcontent" and hide them
+	  tabcontent = document.getElementsByClassName("tabcontent");
+	  for (i = 0; i < tabcontent.length; i++) {
+		tabcontent[i].style.display = "none";
+	  }
+
+	  // Get all elements with class="tablinks" and remove the class "active"
+	  tablinks = document.getElementsByClassName("tablinks");
+	  for (i = 0; i < tablinks.length; i++) {
+		tablinks[i].className = tablinks[i].className.replace(" active", "");
+	  }
+
+	  // Show the current tab, and add an "active" class to the link that opened the tab
+	  document.getElementById(boxType).style.display = "block";
+	  evt.currentTarget.className += " active";
+	}
+  </script>
+</head>
+
+<!------ Include the above in your HEAD tag ---------->
+<body>
+<div class="tab">
+  <button class="tablinks" onclick="openTab(event, 'Inbox')">Inbox</button>
+  <button class="tablinks" onclick="openTab(event, 'Sent')">Sent</button>
+</div>
+
+<div id="Inbox" class="tabcontent" padding: 0>
+  <input type="text" name="message" cols = "50" rows = "5"><br>
+</div>
+
+<div id="Sent" class="tabcontent" padding: 0>
+  <h3>Sent</h3>
+  
+</div>
+
+
+</body>

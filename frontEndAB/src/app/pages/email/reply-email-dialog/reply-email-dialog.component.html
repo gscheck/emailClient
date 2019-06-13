@@ -1,0 +1,35 @@
+<h1 mat-dialog-title>Reply Email</h1>
+<div mat-dialog-content>
+  <form [formGroup]="form">  
+<div fxLayout="row">
+  <mat-form-field appearance="outline" fxFlex="100%">
+    <mat-label>To
+    </mat-label>
+    <input matInput formControlName = 'recipient'>
+  </mat-form-field>
+  </div>
+  <div fxLayout="row">
+  <mat-form-field appearance="outline" fxFlex="100%">
+    <mat-label>Subject
+    </mat-label>
+    <input matInput formControlName = 'subject'>
+  </mat-form-field>
+  </div>
+  <div fxLayout="row">
+  <mat-form-field appearance="outline" fxFlex='100%'>
+  <mat-label>Body
+  </mat-label>
+  <textarea matInput
+            formControlName = 'email_msg'
+            cdkTextareaAutosize
+            #autosize="cdkTextareaAutosize"
+            cdkAutosizeMinRows="5"
+            cdkAutosizeMaxRows="10"></textarea>
+</mat-form-field>
+  </div>
+  </form>
+</div>
+<div mat-dialog-actions fxLayoutAlign="center center">
+  <button mat-button (click)="onNoClick()">Cancel</button>
+  <button mat-button color="primary" (click)="onSubmit()" cdkFocusInitial>Send</button>
+</div>

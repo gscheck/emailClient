@@ -1,0 +1,73 @@
+<div class="settings-container" fxLayoutGap="20px">
+  <div>
+  <form [formGroup]="form">
+    <div fxLayout="column" fxFlex="100%">
+      <mat-card>
+        <mat-card-title>
+          Settings
+        </mat-card-title>
+        <mat-card-content>
+          <div fxLayout="row">
+            <mat-form-field fxFlex>
+              <input 
+                matInput
+                formControlName='IMAP'
+                placeholder="IMAP Host"
+                type="text">
+            </mat-form-field>
+            <mat-form-field fxFlex>
+              <input 
+                matInput
+                formControlName='imap_port'
+                placeholder="IMAP Port"
+                type="number">
+            </mat-form-field>
+          </div>
+          <div fxLayout="row">
+            <mat-form-field fxFlex>
+              <input 
+                matInput
+                formControlName='SMTP'
+                placeholder="SMTP Host"
+                type="text">
+            </mat-form-field>
+            <mat-form-field fxFlex>
+              <input 
+                matInput
+                formControlName='smtp_port'
+                placeholder="SMTP Port"
+                type="number">
+            </mat-form-field>
+          </div>
+    
+          <div fxLayout="row">
+            <mat-form-field fxFlex>
+              <input 
+                matInput
+                formControlName='email_addr'
+                placeholder="Email Address"
+                type="text">
+            </mat-form-field>
+            <mat-form-field fxFlex>
+              <input 
+                matInput
+                formControlName='pwd'
+                placeholder="Password"
+                type="password">
+            </mat-form-field>
+          </div>
+          
+         </mat-card-content>
+       </mat-card>
+    </div>
+  </form>
+  </div>
+</div>
+<div fxLayoutAlign="center center">
+  <button 
+    (click)='onSubmit()'
+    [disabled]="!form.valid"
+    mat-raised-button 
+    color="primary">Save Changes
+  </button>
+</div>

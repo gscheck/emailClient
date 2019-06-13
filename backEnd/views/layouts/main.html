@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style2.css">
+  <link href="src/listbox.css" rel="stylesheet">
+<script src="src/listbox.js"></script>
+  <script>
+	function openTab(evt, boxType) {
+	  // Declare all variables
+	  var i, tabcontent, tablinks;
+
+	  // Get all elements with class="tabcontent" and hide them
+	  tabcontent = document.getElementsByClassName("tabcontent");
+	  for (i = 0; i < tabcontent.length; i++) {
+		tabcontent[i].style.display = "none";
+	  }
+
+	  // Get all elements with class="tablinks" and remove the class "active"
+	  tablinks = document.getElementsByClassName("tablinks");
+	  for (i = 0; i < tablinks.length; i++) {
+		tablinks[i].className = tablinks[i].className.replace(" active", "");
+	  }
+
+	  // Show the current tab, and add an "active" class to the link that opened the tab
+	  document.getElementById(boxType).style.display = "block";
+	  evt.currentTarget.className += " active";
+	}
+  </script>
+  
+  <script>
+
+$(function () {
+
+$('select').listbox({'searchbar': true // enable a search bar to filter & search items
+
+});
+
+});
+
+</script>
+</head>
+
+<!------ Include the above in your HEAD tag ---------->
+<body>
+
+	<div class="icon-bar">
+		  <a class="active" href="#"><i class="fa fa-home"></i></a> 
+		  <a href="#"><i class="fa fa-envelope"></i></a> 
+		  <a href="#"><i class="fa fa-trash"></i></a> 
+		  <a href="#"><i class="fa fa-search"></i></a> 
+	</div>
+	<div class="tab">
+	  <button class="tablinks" onclick="openTab(event, 'Inbox')">Inbox</button>
+	  <button class="tablinks" onclick="openTab(event, 'Sent')">Sent</button>
+	</div>
+
+	<div id="Inbox" class="tabcontent" padding: 0>
+
+		<select id="planets" multiple>
+			<option>Alderaan</option>
+			<option>Corellia</option>
+			<option>Endor</option>
+			<option>Kashyyyk</option>
+			<option>Mustafar</option>
+			<option selected>Naboo</option>
+			<option>Nar Shaddaa</option>
+			<option selected>Tatooine</option>
+			<option>Yavin</option>
+		</select>
+	</div>
+
+	<div id="Sent" class="tabcontent" padding: 0>
+
+	</div>
+
+
+</body>

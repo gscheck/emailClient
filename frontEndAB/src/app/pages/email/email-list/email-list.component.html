@@ -1,0 +1,17 @@
+<div class="email-list-container">
+  <mat-nav-list>
+    <a
+      mat-list-item 
+      *ngFor="let email of emails"
+      [ngClass]="{red: clickedItem === email}"
+      (click)="onSelect(email)">
+      <h3 matLine class="cursor-pointer">{{email.from_add}}</h3>
+        <div matLine>
+          <div class="text-wrap">
+            {{email.subject}}
+          </div>
+        </div>
+      <mat-divider></mat-divider>
+    </a>
+  </mat-nav-list>
+</div>

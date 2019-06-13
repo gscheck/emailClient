@@ -1,0 +1,32 @@
+<div class="email-container">
+  <div class="button-group" fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="20px">
+      <button 
+        mat-flat-button
+        (click)='openDialog()'>New Email
+        <mat-icon aria-label="Example icon-button with a heart icon">email</mat-icon>
+      </button>
+      <button 
+      mat-flat-button
+      (click)='replyDialog()'>
+      Reply
+      <mat-icon aria-label="Example icon-button with a heart icon">reply</mat-icon>
+    </button>
+  </div>
+
+  <!-- spacer -->
+  <div style="height: 20px"></div>
+
+  <div fxLayout="row">
+    <email-list 
+      [emails]="emails_recieved"
+      (selectedEmail)="onEmailSelected($event)"
+      fxFlex="40%">
+    </email-list>
+    <div fxFlex="60%" *ngIf="selectedEmailDetail; else elseBlock">
+      <email-detail [email]="selectedEmailDetail"></email-detail>
+    </div>
+    <ng-template #elseBlock>
+      Please select an email message to read
+    </ng-template>
+  </div>
+</div>

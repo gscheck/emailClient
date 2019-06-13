@@ -1,0 +1,20 @@
+<div class="email-detail-container">
+  <div class="subject-title"  fxLayout="column">
+    <div fxLayout="row" fxLayoutAlign="center center" fxFlex="100%">
+      Subject: {{email.subject}}
+    </div>
+    <div fxLayout="row" fxLayoutAlign="center center" fxFlex="100%">
+      From: {{email.from_add}}
+    </div>
+    <div fxLayout="row" fxLayoutAlign="center center" fxFlex="100%">
+      To: me
+    </div>
+  </div>
+  <!-- adds space-->
+  <div style="height: 20px"></div>
+  <mat-divider></mat-divider>
+
+  <div>
+    <div [innerHTML]="email_html_body"></div>
+  </div>
+</div>

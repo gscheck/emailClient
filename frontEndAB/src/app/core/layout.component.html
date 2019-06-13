@@ -1,0 +1,19 @@
+<div>
+    <app-header [sidenav]="leftSidenav">
+        </app-header>
+            <mat-sidenav-container class="sidenav-container">
+                <mat-sidenav #leftSidenav mode="side" opened>
+                    <app-left-sidenav></app-left-sidenav>
+                    </mat-sidenav>
+                    <mat-sidenav-content [@onMainContentChange]="onSideNavChange ? 'open': 'close'">
+                      
+          <div class="main_content">
+            <!-- displays components at the current route-->
+            <router-outlet></router-outlet>
+          </div>
+          
+        </mat-sidenav-content>
+        </mat-sidenav-container>
+</div>
+  
+  

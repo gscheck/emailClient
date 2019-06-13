@@ -1,0 +1,119 @@
+<div class="content"> 
+<h2 fxLayoutAlign="center center">Registration</h2>
+<form [formGroup]="form">
+<div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="20px">
+<div fxLayout="column">
+  <mat-card class="register-card">
+      <mat-card-title>
+            Email Client Info
+      </mat-card-title>
+      <mat-card-content>
+        <div fxLayout="column">
+          <mat-form-field fxFlex="100%">
+            <input
+              matInput
+              formControlName='first_name'
+              placeholder="First Name"
+              type="text">
+          </mat-form-field>
+          <mat-form-field fxFlex="100%">
+            <input
+              matInput
+              formControlName='last_name'
+              placeholder="Last Name"
+              type="text">
+          </mat-form-field>
+          <mat-form-field fxFlex="100%">
+            <input
+              matInput
+              formControlName='phone'
+              placeholder="Phone"
+              type="text">
+          </mat-form-field>
+          <mat-form-field fxFlex="100%">
+            <input
+              matInput
+              formControlName='user_name'
+              placeholder="Username"
+              type="text">
+          </mat-form-field>
+          <mat-form-field fxFlex="100%">
+            <input
+              matInput
+              formControlName='password'
+              placeholder="Password"
+              type="password">
+          </mat-form-field>
+       </div>
+      </mat-card-content>
+    </mat-card>
+</div>
+  <div fxLayout="column">
+      <mat-card>
+      <mat-card-title>
+            SMTP & IMAP Info
+      </mat-card-title>
+      <mat-card-content>
+        <div fxLayout="column">
+          <mat-form-field fxFlex="100%">
+            <input
+              matInput
+              formControlName='email_addr'
+              placeholder="Email Address"
+              type="text">
+          </mat-form-field>
+          <mat-form-field fxFlex="100%">
+            <input
+              matInput
+              formControlName='SMTP'
+              placeholder="SMTP Host"
+              type="text">
+          </mat-form-field>
+          <mat-form-field fxFlex="100%">
+            <input
+              matInput
+              formControlName='IMAP'
+              placeholder="IMAP Host"
+              type="text">
+          </mat-form-field>
+          <mat-form-field fxFlex="100%">
+            <input
+              matInput
+              formControlName='pwd'
+              placeholder="Password"
+              type="password">
+          </mat-form-field>
+          <mat-form-field fxFlex="100%">
+            <input
+              matInput
+              formControlName='imap_port'
+              placeholder="IMAP Port"
+              type="number">
+          </mat-form-field>
+          <mat-form-field fxFlex="100%">
+            <input
+              matInput
+              formControlName='smtp_port'
+              placeholder="SMTP Port"
+              type="number">
+          </mat-form-field>
+       </div>
+      </mat-card-content>
+    </mat-card>
+  </div>
+ 
+</div>
+ <div fxLayout="row" fxLayoutAlign="center center">
+      <button 
+        (click)='onSubmit()'
+        [disabled]="!form.valid"
+        mat-raised-button 
+        color="primary">Register
+      </button>
+      <button 
+        (click)='navigateToLoginForm()'
+        mat-raised-button>Cancel
+      </button>
+    </div>
+</form>
+</div>

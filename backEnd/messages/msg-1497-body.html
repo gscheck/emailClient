@@ -1,0 +1,1553 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+
+<xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<title>Malwarebytes June 2019 Newsletter, Issue 1</title>
+
+<style>
+	@font-face{
+	    font-family: 'Locator';
+	    font-style: normal;
+	    font-weight: normal;
+	  	font-color: #000000;
+	    src: url('https://static.cleverbridge.com/mycontent/342/Locator-Regular.eot');
+	    src: url('https://static.cleverbridge.com/mycontent/342/Locator-Regular.eot?#iefix') format("embedded-opentype"), 
+	    url('https://static.cleverbridge.com/mycontent/342/Locator-Regular.woff') format("woff"), 
+	    url('https://static.cleverbridge.com/mycontent/342/Locator-Regular.ttf') format("truetype");
+  	}
+
+	body {
+	 	margin: 0;
+	 	padding: 0;
+	 	color:#414042;
+	    font-family: 'Locator', Helvetica,Arial,sans-serif;
+	    font-size:16px;
+	    font-weight:normal;
+	    hyphens:normal;
+	    line-height:19px;
+	    border-collapse: collapse;
+	    height: auto;
+	    min-width: 319px;
+	}
+
+	table, tr, td, a, img {
+	 	margin: 0;
+	 	padding: 0;
+	 	min-width: none;
+	}
+
+	a, a:link, a:visited, a:hover, a:active {
+		color: #004DDC;
+		text-decoration: none !important;
+	}
+
+	.apple-links-body {
+		color: #414042 !important;
+		text-decoration: none !important;
+		font-family: Helvetica,Arial,sans-serif;
+	}
+
+	.apple-links-body a, .apple-links-body a:link, .apple-links-body a:visited, .apple-links-body a:hover, .apple-links-body a:active {
+		color: #414042 !important;
+		text-decoration: none !important;
+	}
+
+	.apple-links-footer {
+		color: #ffffff !important;
+		text-decoration: none !important;
+	}
+
+	.apple-links-footer a, .apple-links-footer a:link, .apple-links-footer a:visited, .apple-links-footer a:hover, .apple-links-footer a:active {
+		color: #ffffff !important;
+		text-decoration: none !important;
+	}
+
+	.body-links {
+		color: #0D3ECC !important;
+		text-decoration: none !important;
+	}
+
+	.body-links a, .body-links a:link, .body-links a:visited, .body-links a:hover, .body-links a:active {
+		color: #0D3ECC !important;
+		text-decoration: none !important;
+	}
+
+	.gray-body-links {
+		color: #141519 !important;
+		text-decoration: none !important;
+	}
+
+	.gray-body-links a, .gray-body-links a:link, .gray-body-links a:visited, .gray-body-links a:hover, .gray-body-links a:active {
+		color: #141519 !important;
+		text-decoration: none !important;
+	}	
+
+	.white-footer-links {
+		color: #ffffff !important;
+		text-decoration: none !important;
+	}
+
+	.white-footer-links a, .white-footer-links a:link, .white-footer-links a:visited, .white-footer-links a:hover, .white-footer-links a:active {
+		color: #ffffff !important;
+		text-decoration: none !important;
+	}	
+
+	@-ms-viewport{ 
+	 	width: device-width; 
+	}
+
+	@media only screen{
+		html { 
+			min-height:100%;
+			background:#ffffff;
+		}
+	}
+
+	/* BEGIN MEDIA QUERIES */
+	@media only screen and (max-width:599px)
+	{
+		.hide {
+			display:none !important;
+		}
+
+		.mobile-container {
+			width: 100% !important;
+			min-width: 100% !important;
+			/*overflow: hidden !important;*/
+		}
+
+		.mobile-container table {
+			width: 100% !important;
+          	height: auto !important;
+          	max-height: none !important;
+          	text-align: center !important;
+          	margin: 0 auto !important;
+		}
+
+		/* HEADER STYLING */
+		#malwarebytes-logo {
+			width: 100% !important;
+			height: auto !important;
+			max-height: none !important;
+		}
+
+		#newsletter-info-spacing {
+			margin: 0 !important;
+			margin-left: 20% !important;
+			padding: 0 !important;
+			padding-bottom: 5% !important;
+			display: block !important; 
+			width: 80% !important;
+		}
+
+		/* BODY STYLING */
+		.one-hundred-percent {
+			width: 100% !important;
+	      	max-height: none !important;
+	      	text-align: center!important;
+	      	margin: 0 auto !important;
+		}
+
+		.one-hundred-percent td {
+			width: 100% !important;
+	      	max-height: none !important;
+	      	text-align: center!important;
+		}
+
+		.blog-post-image-center td {
+			margin: 0 auto !important;
+			padding: 0 !important;
+			text-align: center !important;
+			display: block !important;
+		}
+
+		/*.blog-post-image-center img {
+			margin: 0 auto !important;
+			text-align: center !important;
+		}*/
+
+		.blog-post-center, .blog-post-center p, .blog-post-center h2 {
+			width: 86% !important;
+			margin: 0 auto !important;
+			text-align: center !important; 
+			display: block !important;
+		}
+
+		.paragraph-top-padding p {
+			padding-top: 4px !important; 
+		}
+
+		.paragraph-top-padding-11 p {
+			padding-top: 11px !important;
+		}
+
+		.title-text-size {
+			font-size: 1.5em !important;
+		}
+
+		.display_block {
+			display: block !important;
+		}
+
+		.height-20-spacer-adjust {
+			height: 20px !important;
+		}
+
+		.body-text-font {
+			font-size: 1em !important;
+		}
+
+		.padding-top-adjust, .padding-top-adjust p {
+			padding-top: 3% !important;
+		}
+
+		.padding-top-adjust-10, .padding-top-adjust-10 p {
+			padding-top: 8% !important;
+		}
+
+		.padding-top-adjust-20 {
+			padding-top: 13% !important;
+		}		
+
+		.blog-content-centered {
+			margin: 0 auto !important;
+			text-align: center !important;
+		}
+
+		.section-spacer-adjust {
+			height: 60px !important;
+		}
+
+		.title-width-adjust {
+			margin: 0 auto !important;
+			width: 90% !important;
+		}
+
+		.mobile-padding-top {
+			padding-top: 20px !important; 
+		}
+
+		.paragraph-width-adjust {
+			margin: 0 auto !important;
+			width: 86% !important;
+		}
+
+		.center-align-images {
+			margin: 0 auto !important;
+			text-align: center !important;
+			float: none !important;
+		}
+
+		.width-28 {
+			width: 28px !important;
+		}
+
+		.width-50-percent {
+			width: 50% !important;
+		}
+
+		td.width-100-percent {
+			width: 100% !important;
+			margin: 0 auto !important;
+			text-align: center !important;
+		}
+
+		.mobile-image-90-percent {
+			width: 90% !important;
+		}
+
+		/* FOOTER STYLING */
+		.footer-text-size, .footer-text-size p, .footer-text-size a, .footer-text-size span {
+			font-size: .85em !important;
+		}
+
+		.mobile-social table {
+			width: 80% !important;
+			margin: 0 auto !important;
+		}
+
+		.mobile-social img {
+			width: 50% !important;
+			height: auto !important;
+		}
+
+		.icon-size-adjust {
+			width: 75% !important;
+			/*border: 1px solid green !important; */
+		}
+
+		.icon-size-adjust td {
+			width: 15% !important;
+		}
+
+		.icon-size-adjust img {
+			text-align: center !important;
+			margin: 0 auto !important;
+			width: 30% !important;
+			height: auto !important;
+		}
+
+		.facebook-icon-size img {
+			text-align: center !important;
+			margin: 0 auto !important;
+			width: 16% !important;
+			height: auto !important;
+		}
+
+		*[class~=hide_on_mobile] { 
+			display: none !important;
+		}
+
+		*[class~=show_on_mobile] {
+			display : block !important;
+		    /*width : auto !important;*/
+		    max-height: inherit !important;
+		    overflow : visible !important;
+		    float : none !important;
+		}		
+
+	}
+</style>
+
+    
+    
+<body style="
+    -moz-box-sizing:border-box;
+    -moz-hyphens:none;
+    -ms-text-size-adjust:100%;
+    -ms-word-break:keep-all;
+    -webkit-box-sizing:border-box;
+    -webkit-hyphens:none;
+    -webkit-text-size-adjust:100%;
+    margin:0;
+    box-sizing:border-box;
+    color:#0a0a0a;
+    font-family: 'Locator', 'Open Sans', Helvetica,Arial,sans-serif;
+    font-size:16px;
+    font-weight:normal;
+    hyphens:none;
+    line-height:0px;
+    margin:0;
+    min-width:100%;
+    padding:0;
+    text-align:center;
+    width:100%!important;
+    word-break:normal;" yahoo="fix"><style type="text/css">
+div.preheader 
+{ display: none !important; } 
+</style>
+<div class="preheader" style="font-size: 1px; display: none !important;">Malwarebytes June 2019 Newsletter No.1</div>
+	<!--[if mso]>
+		<style type="text/css">
+			body, table, td, h1, h2, p, a, span {
+				font-family: Arial, Helvetica, sans-serif !important;
+			}
+		</style>
+	<![endif]-->
+
+	<!-- BEGIN BODY CONTENT STYLING -->
+	<table role="presentation" align="center" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" class="mobile-container" style="margin: 0 auto; padding: 0; width: 600px; /*background-color: #ffffff;*/" width="600">
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ BEGIN HEADER -->	
+
+		<!-- BEGIN HERO BANNER AND CONTENT -->
+		<tr>
+			<td align="center" bgcolor="#ffffff" class="one-hundred-percent" style="Margin: 0; text-align: center; width:100%;margin:0; padding: 0;" width="100%">
+				<a align="center" href="http://click.malwarebytes.com/?qs=77e936dbd666ca97912661dec9cfca52a177e06e788c1d332c840032ed39cb1dd1bfeaf7bc525c239d0fc4f823fdadffe6581a3a4c1f6798" style="mso-table-lspace:0;mso-table-rspace:0;Margin:0;margin:0; margin: 0 auto; border:0;display:block;font-family:'Locator', 'Open Sans', Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0;padding:0;text-align:center;text-decoration:none;width:100%; color: #0a0a0a;" universal="true" width="100%">
+					<img align="center" alt="Malwarebytes Newsletter June 2019 | Issue 1" border="0" id="malwarebytes-logo" src="http://image.malwarebytes.com/lib/fe8c12737062017e72/m/2/84cf59b3-e8f0-4a45-bd41-cd445af35a53.jpg" style="-ms-interpolation-mode:bicubic; margin:0 auto; display:block; outline:0; text-align:center; text-decoration:none; width:600px; padding: 0; border: 0; border-style: none; height: auto;" width="600" /> 
+				</a>
+			</td>
+		</tr>
+		<!-- END HERO BANNER AND CONTENT -->
+		
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ BEGIN EMAIL CONTENT -->	
+		<!-- BEGIN WHITE SPACER -->
+		<tr>
+			<td align="center" bgcolor="#FFFFFF" class="one-hundred-percent" height="20" style="Margin: 0; margin:0; padding: 0;text-align: center; width: 100%; display: block;" width="100%">
+				<span style="line-height: 0; font-size: 0;">&nbsp;</span>
+			</td>
+		</tr>		
+		<!-- END WHITE SPACER -->
+
+		<!-- BEGIN STORIES -->
+		<tr>
+			<td align="center" class="one-hundred-percent" style="Margin: 0; text-align: left; margin: 0 auto; padding: 0; width: 100%; " width="100%">
+				<table role="presentation" align="left" border="0" cellpadding="0" cellspacing="0" class="mobile-container" style="Margin: 0; border-collapse:collapse;border-spacing:0;margin:0 auto;padding:0;text-align:left;vertical-align:top;width:100%;" width="100%">
+					<tr>
+						<td align="center" bgcolor="#ffffff" class="one-hundred-percent" style="Margin: 0; text-align: center; width: 100%;margin:0; padding: 0;" width="100%">
+							<h1 align="left" class="blog-post-center title-text-size" style="-moz-hyphens:none; -ms-word-break:normal;-webkit-hyphens:none;Margin: 0; Margin-left: 25px; margin:0; margin-left: 25px;  color:#0D3ECC;font-family: 'Locator', 'Open Sans', Helvetica,Arial,sans-serif; font-size:28px; font-weight:500; hyphens:none; line-height:34px; padding:0; text-align:left; white-space:normal; word-break:normal;width: 100%; display: block;" width="100%">
+								The big&nbsp;stories
+							</h1>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<!-- END STORIES -->
+
+		<!-- BEGIN WHITE SPACER -->
+		<tr>
+			<td align="center" bgcolor="#FFFFFF" class="one-hundred-percent height-20-spacer-adjust" height="30" style="Margin: 0; margin:0; padding: 0;text-align: center; width: 100%; display: block;" width="100%">
+				<span style="line-height: 0; font-size: 0;">&nbsp;</span>
+			</td>
+		</tr>		
+		<!-- END WHITE SPACER -->		
+
+		<!-- BEGIN BLOG POST 1 -->
+		<tr>
+			<td align="center" bgcolor="#FFFFFF" class="one-hundred-percent" style="Margin: 0; text-align: left; margin: 0 auto; padding: 0; width: 100%; " width="100%">
+				<table role="presentation" align="left" border="0" cellpadding="0" valign="top" cellspacing="0" class="mobile-container blog-post-center blog-post-image-center" style="Margin: 0; border-collapse:collapse;border-spacing:0;margin:0 auto;padding:0;text-align:left;vertical-align:top;width:100%" width="100%">
+					<tr>
+						<!-- BEGIN POST 1 IMAGE 1 -->
+						<td align="left" valign="middle" bgcolor="#FFFFFF" class="hide_on_mobile" style="Margin: 0; text-align: left; width:175px; margin:0; padding: 0; display: inline-block; vertical-align: middle; font-size:0;" width="175">
+							<a href="http://click.malwarebytes.com/?qs=77e936dbd666ca97b5acb4ae28be7bd746f3faaded0eff9fc7ea35723c26bac2d3f2af6b6372ba068500140517747029180dd804399ba7d5" style="-moz-hyphens:none;-webkit-hyphens:none;Margin:0;margin:0 auto;padding: 0; color:#004DDC;font-family:'Locator', 'Open Sans', Helvetica,Arial,sans-serif;font-size:16px;font-weight:normal;hyphens:none;line-height:19px;overflow-wrap:normal;text-align:left; word-break:normal;width:100%; text-decoration: none;" class="body-links">
+								<img align="right" class="center-align-images hide_on_mobile" border="0" class="body-text-font" src="http://image.malwarebytes.com/lib/fe8c12737062017e72/m/2/8a58e00f-48b0-4a59-ac89-b1fe0773d9df.jpg" alt="SPAM" style="-ms-interpolation-mode:bicubic; Margin: 0; margin: 0; display:block; outline:0; text-align:right; text-decoration:none; width:150px; padding: 0; border: 0; border-style: none; height: auto; " width="150" />
+							</a>
+						</td>
+						<!-- END POST 1 IMAGE 1 -->
+
+						<!-- BEGIN POST 1 [MOBILE] IMAGE 1 -->
+						<!--[if !mso]><!-->
+						<td align="left" valign="middle" bgcolor="#FFFFFF" class="one-hundred-percent show_on_mobile" style="width: 0; max-height: 0; overflow: hidden; float: left; display: none; margin: 0 auto;" width="150">
+							<a href="http://click.malwarebytes.com/?qs=77e936dbd666ca97b5acb4ae28be7bd746f3faaded0eff9fc7ea35723c26bac2d3f2af6b6372ba068500140517747029180dd804399ba7d5" style="-moz-hyphens:none;-webkit-hyphens:none;Margin:0;margin:0 auto;padding: 0; color:#004DDC;font-family:'Locator', 'Open Sans', Helvetica,Arial,sans-serif;font-size:16px;font-weight:normal;hyphens:none;line-height:19px;overflow-wrap:normal;text-align:left; word-break:normal;width:100%; text-decoration: none;" class="body-links">
+								<img align="center" class="center-align-images mobile-image-90-percent"border="0" class="body-text-font" src="http://image.malwarebytes.com/lib/fe8c12737062017e72/m/2/6681ed3b-6552-4b7e-a258-0245dae157a6.jpg" alt="alt="SPAM"" style="-ms-interpolation-mode:bicubic; Margin: 0; margin: 0 auto;  display:block; outline:0; text-align:center; text-decoration:none; padding: 0; border: 0; border-style: none; height: auto; " />
+							</a>
+						</td>
+						<!--<![endif]-->
+						<!-- END POST 1 [MOBILE] IMAGE 1 -->
+
+						<!-- BEGIN POST 1 PARAGRAPH 1 -->
+						<td align="left" bgcolor="#FFFFFF" valign="middle" class="one-hundred-percent" style="Margin: 0; text-align: left; margin: 0; padding: 0; width: 395px; display: inline-block; vertical-align: middle;" width="395">
+							<table role="presentation" align="left" border="0" cellpadding="0" cellspacing="0" class="mobile-container" style="Margin: 0; margin: 0; border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:middle; width:100%;" width="100%">
+								<tbody>
+									<tr>
+										<td align="left" class="one-hundred-percent padding-top-adjust blog-post-center" style="Margin: 0; margin:0;padding:0;vertical-align: middle; display: block; width: 100%; text-align: left;" width="100%">
+											<h2 class="body-text-font padding-top-adjust" style="-moz-hyphens:none;-webkit-hyphens:none; Margin: 0; Margin-left: 20px; margin:0; margin-left: 20px; padding: 0; color:#141519;font-family:'Locator', 'Open Sans', Helvetica,Arial,sans-serif;font-size:16px;font-weight:bold;hyphens:none;line-height:19px;overflow-wrap:normal;text-align:left; word-break:normal;width:100%;" width="100%">	
+												<a href="http://click.malwarebytes.com/?qs=77e936dbd666ca97b5acb4ae28be7bd746f3faaded0eff9fc7ea35723c26bac2d3f2af6b6372ba068500140517747029180dd804399ba7d5" style="-moz-hyphens:none;-webkit-hyphens:none;Margin:0;margin:0 auto;padding: 0; color:#141519;font-family:inherit;font-size:inherit;font-weight:inherit;hyphens:none;line-height:inherit;overflow-wrap:normal;text-align:left; word-break:normal;width:100%; text-decoration: none;" class="gray-body-links">
+														SPAM: stupid pointless annoying...malware?
+												</a>
+											</h2>
+										</td>
+									</tr>
+
+									<tr>
+										<td align="left" class="one-hundred-percent paragraph-top-padding" style="Margin: 0; margin:0;padding:0;vertical-align: middle; display: block; width: 100%; text-align: left;" width="100%">
+											<p class="body-text-font" style="-moz-hyphens:none;-webkit-hyphens:none; Margin: 0; Margin-left: 20px; margin:0; margin-left: 20px; padding: 0; padding-top: 4px; color:#414042;font-family:'Locator', 'Open Sans', Helvetica,Arial,sans-serif;font-size:16px; hyphens:none;line-height:19px;overflow-wrap:normal; text-align:left; word-break:normal;width:100%; font-weight: normal;" width="100%">
+											Spam is any kind of unwanted, unsolicited digital communication that gets sent out in bulk. More than a nuisance, it’s a serious&nbsp;threat.
+											</p>
+										</td>
+									</tr>
+
+									<!-- BEGIN WHITE SPACER -->
+									<tr>
+										<td align="center" bgcolor="#FFFFFF" class="one-hundred-percent" height="8" style="Margin: 0; margin:0; padding: 0;text-align: center; width: 100%; display: block;" width="100%">
+											<span style="line-height: 0; font-size: 0;">&nbsp;</span>
+										</td>
+									</tr>		
+									<!-- END WHITE SPACER -->
+
+									<tr>
+										<td align="left" class="one-hundred-percent" style="Margin: 0; margin:0;padding:0; vertical-align: middle; display: block; width: 100%; text-align: left;" width="100%">
+											<p class="body-text-font paragraph-width-adjust" style="-moz-hyphens:none;-webkit-hyphens:none; Margin: 0; Margin-left: 20px; margin:0; margin-left: 20px; padding: 0; color:#0D3ECC;font-family:'Locator', 'Open Sans', Helvetica,Arial,sans-serif;font-size:16px;font-weight:normal;hyphens:none;line-height:19px;overflow-wrap:normal;text-align:left; word-break:normal;width:100%;" width="100%">
+												<a href="http://click.malwarebytes.com/?qs=77e936dbd666ca97b5acb4ae28be7bd746f3faaded0eff9fc7ea35723c26bac2d3f2af6b6372ba068500140517747029180dd804399ba7d5" style="-moz-hyphens:none;-webkit-hyphens:none;Margin:0;margin:0 auto;padding: 0; color:#0D3ECC;font-family:inherit;font-size:inherit;font-weight:normal;hyphens:none;line-height:inherit;overflow-wrap:normal;text-align:left; word-break:normal;width:100%; text-decoration: none;" class="body-links body-text-font">
+													Keep reading
+												</a>
+											</p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</td>
+						<!-- BEGIN POST 1 PARAGRAPH 1 -->
+					</tr>	
+				</table>
+			</td>
+		</tr>
+		<!-- END BLOG POST 1 -->
+
+		<!-- BEGIN WHITE SPACER -->
+		<tr>
+			<td align="center" bgcolor="#FFFFFF" class="one-hundred-percent" height="30" style="Margin: 0; margin:0; padding: 0;text-align: center; width: 100%; display: block;" width="100%">
+				<span style="line-height: 0; font-size: 0;">&nbsp;</span>
+			</td>
+		</tr>		
+		<!-- END WHITE SPACER -->		
+
+		<!-- BEGIN BLOG POST 2 -->
+		<tr>
+			<td align="center" bgcolor="#FFFFFF" class="one-hundred-percent" style="Margin: 0; text-align: left; margin: 0 auto; padding: 0; width: 100%; " width="100%">
+				<table role="presentation" align="left" border="0" cellpadding="0" valign="top" cellspacing="0" class="mobile-container blog-post-center blog-post-image-center" style="Margin: 0; border-collapse:collapse;border-spacing:0;margin:0 auto;padding:0;text-align:left;vertical-align:top;width:100%" width="100%">
+					<tr>
+						<!-- BEGIN POST 2 IMAGE 1 -->
+						<td align="left" valign="middle" bgcolor="#FFFFFF" class="hide_on_mobile" style="Margin: 0; text-align: left; width:175px; margin:0; padding: 0; display: inline-block; vertical-align: middle;" width="175">
+							<a href="http://click.malwarebytes.com/?qs=77e936dbd666ca97c38e6054c051295e0dc7650510851e272ac511ea0055a054db08c33701cf12e7b675d9cfbc79307101ab07d09c6a84d3" style="-moz-hyphens:none;-webkit-hyphens:none;Margin:0;margin:0 auto;padding: 0; color:#004DDC;font-family:'Locator', 'Open Sans', Helvetica,Arial,sans-serif;font-size:16px;font-weight:normal;hyphens:none;line-height:19px;overflow-wrap:normal;text-align:left; word-break:normal;width:100%; text-decoration: none;" class="body-links">
+								<img align="right" class="center-align-images hide_on_mobile"  border="0" class="body-text-font" src="http://image.malwarebytes.com/lib/fe8c12737062017e72/m/2/c8d3b110-ed61-49b5-8073-3593e51a904a.jpg" alt="The top six takeaways" style="-ms-interpolation-mode:bicubic; Margin: 0; margin: 0; display:block; outline:0; text-align:right; text-decoration:none; width:150px; padding: 0; border: 0; border-style: none; height: auto; " width="150" />
+							</a>
+						</td>
+						<!-- END POST 2 IMAGE 1 -->
+
+						<!-- BEGIN POST 2 [MOBILE] IMAGE 1 -->
+						<!--[if !mso]><!-->
+						<td align="left" valign="middle" bgcolor="#FFFFFF" class="one-hundred-percent show_on_mobile" style="width: 0; max-height: 0; overflow: hidden; float: left; display: none;" width="150">
+							<a href="http://click.malwarebytes.com/?qs=77e936dbd666ca97c38e6054c051295e0dc7650510851e272ac511ea0055a054db08c33701cf12e7b675d9cfbc79307101ab07d09c6a84d3" style="-moz-hyphens:none;-webkit-hyphens:none;Margin:0;margin:0 auto;padding: 0; color:#004DDC;font-family:'Locator', 'Open Sans', Helvetica,Arial,sans-serif;font-size:16px;font-weight:normal;hyphens:none;line-height:19px;overflow-wrap:normal;text-align:left; word-break:normal;width:100%; text-decoration: none;" class="body-links">
+								<img align="center" class="center-align-images mobile-image-90-percent" border="0" class="body-text-font" src="http://image.malwarebytes.com/lib/fe8c12737062017e72/m/2/724c7c88-0ae2-472b-b2d7-641e96b59cbe.jpg" alt="The top six takeaways" style="-ms-interpolation-mode:bicubic; Margin: 0; margin: 0 auto;  display:block; outline:0; text-align:center; text-decoration:none; padding: 0; border: 0; border-style: none; height: auto; " />
+							</a>
+						</td>
+						<!--<![endif]-->
+						<!-- END POST 2 [MOBILE] IMAGE 1 -->
+
+						<!-- BEGIN POST 2 PARAGRAPH 1 -->
+						<td align="left" bgcolor="#FFFFFF" class="one-hundred-percent" style="Margin: 0; text-align: left; margin: 0; padding: 0; width: 395px; display: inline-block;" width="395">
+							<table role="presentation" align="left" border="0" cellpadding="0" cellspacing="0" class="mobile-container" style="Margin: 0; margin: 0; border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:middle; width:100%;" width="100%">
+								<tbody>
+									<tr>
+										<td align="left" class="one-hundred-percent padding-top-adjust blog-post-center" style="Margin: 0; margin:0;padding:0;vertical-align: middle; display: block; width: 100%; text-align: left;" width="100%">
+											<h2 class="body-text-font padding-top-adjust" style="-moz-hyphens:none;-webkit-hyphens:none; Margin: 0; Margin-left: 20px; margin:0; margin-left: 20px; padding: 0; color:#141519;font-family:'Locator', 'Open Sans', Helvetica,Arial,sans-serif;font-size:16px;font-weight:bold;hyphens:none;line-height:19px;overflow-wrap:normal;text-align:left; word-break:normal;width:100%;" width="100%">	
+												<a href="http://click.malwarebytes.com/?qs=77e936dbd666ca97c38e6054c051295e0dc7650510851e272ac511ea0055a054db08c33701cf12e7b675d9cfbc79307101ab07d09c6a84d3" style="-moz-hyphens:none;-webkit-hyphens:none;Margin:0;margin:0 auto;padding: 0; color:#141519;font-family:inherit;font-size:inherit;font-weight:inherit;hyphens:none;line-height:inherit;overflow-wrap:normal;text-align:left; word-break:normal;width:100%; text-decoration: none;" class="gray-body-links">
+													The top six takeaways for user privacy
+												</a>
+											</h2>
+										</td>
+									</tr>
+
+									<tr>
+										<td align="left" class="one-hundred-percent paragraph-top-padding" style="Margin: 0; margin:0;padding:0;vertical-align: middle; display: block; width: 100%; text-align: left;" width="100%">
+											<p class="body-text-font" style="-moz-hyphens:none;-webkit-hyphens:none; Margin: 0; Margin-left: 20px; margin:0; margin-left: 20px; padding: 0; padding-top: 4px; color:#414042;font-family:'Locator', 'Open Sans', Helvetica,Arial,sans-serif;font-size:16px; hyphens:none;line-height:19px;overflow-wrap:normal; text-align:left; word-break:normal;width:100%; font-weight: normal;" width="100%">
+												Here’s what you need to know about protecting your online privacy, whether in a court of law or in a web&nbsp;browser.
+											</p>
+										</td>
+									</tr>
+
+									<!-- BEGIN WHITE SPACER -->
+									<tr>
+										<td align="center" bgcolor="#FFFFFF" class="one-hundred-percent" height="8" style="Margin: 0; margin:0; padding: 0;text-align: center; width: 100%; display: block;" width="100%">
+											<span style="line-height: 0; font-size: 0;">&nbsp;</span>
+										</td>
+									</tr>		
+									<!-- END WHITE SPACER -->
+
+									<tr>
+										<td align="left" class="one-hundred-percent" style="Margin: 0; margin:0;padding:0; vertical-align: middle; display: block; width: 100%; text-align: left;" width="100%">
+											<p class="body-text-font" style="-moz-hyphens:none;-webkit-hyphens:none; Margin: 0; Margin-left: 20px; margin:0; margin-left: 20px; padding: 0; color:#0D3ECC;font-family:'Locator', 'Open Sans', Helvetica,Arial,sans-serif;font-size:16px;font-weight:normal;hyphens:none;line-height:19px;overflow-wrap:normal;text-align:left; word-break:normal;width:100%;" width="100%">
+												<a href="http://click.malwarebytes.com/?qs=77e936dbd666ca97c38e6054c051295e0dc7650510851e272ac511ea0055a054db08c33701cf12e7b675d9cfbc79307101ab07d09c6a84d3" style="-moz-hyphens:none;-webkit-hyphens:none;Margin:0;margin:0 auto;padding: 0; color:#0D3ECC;font-family:inherit;font-size:inherit;font-weight:normal;hyphens:none;line-height:inherit;overflow-wrap:normal;text-align:left; word-break:normal;width:100%; text-decoration: none;" class="body-links body-text-font">
+													Keep reading
+												</a>
+											</p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</td>
+						<!-- BEGIN POST 2 PARAGRAPH 1 -->
+					</tr>	
+				</table>
+			</td>
+		</tr>
+		<!-- END BLOG POST 2 -->
+
+		<!-- BEGIN WHITE SPACER -->
+		<tr>
+			<td align="center" bgcolor="#FFFFFF" class="one-hundred-percent" height="30" style="Margin: 0; margin:0; padding: 0;text-align: center; width: 100%; display: block;" width="100%">
+				<span style="line-height: 0; font-size: 0;">&nbsp;</span>
+			</td>
+		</tr>		
+		<!-- END WHITE SPACER -->
+
+		<!-- BEGIN BLOG POST 3 -->
+		<tr>
+			<td align="center" bgcolor="#FFFFFF" class="one-hundred-percent" style="Margin: 0; text-align: left; margin: 0 auto; padding: 0; width: 100%; " width="100%">
+				<table role="presentation" align="left" border="0" cellpadding="0" valign="top" cellspacing="0" class="mobile-container blog-post-center blog-post-image-center" style="Margin: 0; border-collapse:collapse;border-spacing:0;margin:0 auto;padding:0;text-align:left;vertical-align:top;width:100%" width="100%">
+					<tr>
+						<!-- BEGIN POST 3 IMAGE 1 -->
+						<td align="left" valign="middle" bgcolor="#FFFFFF" class="hide_on_mobile" style="Margin: 0; text-align: left; width:175px; margin:0; padding: 0; display: inline-block; vertical-align: middle;" width="175">
+							<a href="http://click.malwarebytes.com/?qs=77e936dbd666ca975d5726750a73c4f24088936b1b1c5fa28ce2b6e82b85ccd52eda031faf84e23f22efb4659da79c56a61e7f7dc8b5f173" style="-moz-hyphens:none;-webkit-hyphens:none;Margin:0;margin:0 auto;padding: 0; color:#004DDC;font-family:'Locator', 'Open Sans', Helvetica,Arial,sans-serif;font-size:16px;font-weight:normal;hyphens:none;line-height:19px;overflow-wrap:normal;text-align:left; word-break:normal;width:100%; text-decoration: none;" class="body-links">
+								<img align="right" class="center-align-images hide_on_mobile" border="0" class="body-text-font" src="http://image.malwarebytes.com/lib/fe8c12737062017e72/m/2/c5c5c278-1b91-4d19-b41e-3ec876cbc193.jpg" alt="Mysterious" style="-ms-interpolation-mode:bicubic; Margin: 0; margin: 0; display:block; outline:0; text-align:right; text-decoration:none; width:150px; padding: 0; border: 0; border-style: none; height: auto; " width="150" />
+							</a>
+						</td>
+						<!-- END POST 3 IMAGE 1 -->
+
+						<!-- BEGIN POST 3 [MOBILE] IMAGE 1 -->
+						<!--[if !mso]><!-->
+						<td align="left" valign="middle" bgcolor="#FFFFFF" class="one-hundred-percent show_on_mobile" style="width: 0; max-height: 0; overflow: hidden; float: left; display: none;" width="150">
+							<a href="http://click.malwarebytes.com/?qs=77e936dbd666ca975d5726750a73c4f24088936b1b1c5fa28ce2b6e82b85ccd52eda031faf84e23f22efb4659da79c56a61e7f7dc8b5f173" style="-moz-hyphens:none;-webkit-hyphens:none;Margin:0;margin:0 auto;padding: 0; color:#004DDC;font-family:'Locator', 'Open Sans', Helvetica,Arial,sans-serif;font-size:16px;font-weight:normal;hyphens:none;line-height:19px;overflow-wrap:normal;text-align:left; word-break:normal;width:100%; text-decoration: none;" class="body-links">
+								<img align="center" class="center-align-images mobile-image-90-percent" border="0" class="body-text-font" src="http://image.malwarebytes.com/lib/fe8c12737062017e72/m/2/466fd60e-babe-4546-8d69-832dd82f855a.jpg" alt="Mysterious" style="-ms-interpolation-mode:bicubic; Margin: 0; margin: 0 auto;  display:block; outline:0; text-align:center; text-decoration:none; padding: 0; border: 0; border-style: none; height: auto; " />
+							</a>
+						</td>
+						<!--<![endif]-->
+						<!-- END POST 3 [MOBILE] IMAGE 1 -->
+
+						<!-- BEGIN POST 3 PARAGRAPH 1 -->
+						<td align="left" bgcolor="#FFFFFF" class="one-hundred-percent" style="Margin: 0; text-align: left; margin: 0; padding: 0; width: 395px; display: inline-block;" width="395">
+							<table role="presentation" align="left" border="0" cellpadding="0" cellspacing="0" class="mobile-container" style="Margin: 0; margin: 0; border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:middle; width:100%;" width="100%">
+								<tbody>
+									<tr>
+										<td align="left" class="one-hundred-percent padding-top-adjust blog-post-center" style="Margin: 0; margin:0;padding:0;vertical-align: middle; display: block; width: 100%; text-align: left;" width="100%">
+											<h2 class="body-text-font padding-top-adjust" style="-moz-hyphens:none;-webkit-hyphens:none; Margin: 0; Margin-left: 20px; margin:0; margin-left: 20px; padding: 0; color:#141519;font-family:'Locator', 'Open Sans', Helvetica,Arial,sans-serif;font-size:16px;font-weight:bold;hyphens:none;line-height:19px;overflow-wrap:normal;text-align:left; word-break:normal;width:100%;" width="100%">	
+												<a href="http://click.malwarebytes.com/?qs=77e936dbd666ca975d5726750a73c4f24088936b1b1c5fa28ce2b6e82b85ccd52eda031faf84e23f22efb4659da79c56a61e7f7dc8b5f173" style="-moz-hyphens:none;-webkit-hyphens:none;Margin:0;margin:0 auto;padding: 0; color:#141519;font-family:inherit;font-size:inherit;font-weight:inherit;hyphens:none;line-height:inherit;overflow-wrap:normal;text-align:left; word-break:normal;width:100%; text-decoration: none;" class="gray-body-links">
+													Mysterious database exposed personal information of 80 million US households
+												</a>
+											</h2>
+										</td>
+									</tr>
+
+									<tr>
+										<td align="left" class="one-hundred-percent paragraph-top-padding" style="Margin: 0; margin:0;padding:0;vertical-align: middle; display: block; width: 100%; text-align: left;" width="100%">
+											<p class="body-text-font" style="-moz-hyphens:none;-webkit-hyphens:none; Margin: 0; Margin-left: 20px; margin:0; margin-left: 20px; padding: 0; padding-top: 4px; color:#414042;font-family:'Locator', 'Open Sans', Helvetica,Arial,sans-serif;font-size:16px; hyphens:none;line-height:19px;overflow-wrap:normal; text-align:left; word-break:normal;width:100%; font-weight: normal;" width="100%">
+													What kinds of data did the database contain and what can cybercriminals do with it? Here’s&nbsp;our&nbsp;take.
+											</p>
+										</td>
+									</tr>
+
+									<!-- BEGIN WHITE SPACER -->
+									<tr>
+										<td align="center" bgcolor="#FFFFFF" class="one-hundred-percent" height="8" style="Margin: 0; margin:0; padding: 0;text-align: center; width: 100%; display: block;" width="100%">
+											<span style="line-height: 0; font-size: 0;">&nbsp;</span>
+										</td>
+									</tr>		
+									<!-- END WHITE SPACER -->
+
+									<tr>
+										<td align="left" class="one-hundred-percent" style="Margin: 0; margin:0;padding:0; vertical-align: middle; display: block; width: 100%; text-align: left;" width="100%">
+											<p class="body-text-font" style="-moz-hyphens:none;-webkit-hyphens:none; Margin: 0; Margin-left: 20px; margin:0; margin-left: 20px; padding: 0; color:#0D3ECC;font-family:'Locator', 'Open Sans', Helvetica,Arial,sans-serif;font-size:16px;font-weight:normal;hyphens:none;line-height:19px;overflow-wrap:normal;text-align:left; word-break:normal;width:100%;" width="100%">
+												<a href="http://click.malwarebytes.com/?qs=77e936dbd666ca975d5726750a73c4f24088936b1b1c5fa28ce2b6e82b85ccd52eda031faf84e23f22efb4659da79c56a61e7f7dc8b5f173" style="-moz-hyphens:none;-webkit-hyphens:none;Margin:0;margin:0 auto;padding: 0; color:#0D3ECC;font-family:inherit;font-size:inherit;font-weight:normal;hyphens:none;line-height:inherit;overflow-wrap:normal;text-align:left; word-break:normal;width:100%; text-decoration: none;" class="body-links body-text-font">
+													Keep reading
+												</a>
+											</p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</td>
+						<!-- BEGIN POST 3 PARAGRAPH 1 -->
+					</tr>	
+				</table>
+			</td>
+		</tr>
+		<!-- END BLOG POST 3 -->
+
+		<!-- BEGIN WHITE SPACER -->
+		<tr>
+			<td align="center" bgcolor="#FFFFFF" class="one-hundred-percent" height="30" style="Margin: 0; margin:0; padding: 0;text-align: center; width: 100%; display: block;" width="100%">
+				<span style="line-height: 0; font-size: 0;">&nbsp;</span>
+			</td>
+		</tr>		
+		<!-- END WHITE SPACER -->		
+
+		<!-- BEGIN BLOG POST 4 -->
+		<tr>
+			<td align="center" bgcolor="#FFFFFF" class="one-hundred-percent" style="Margin: 0; text-align: left; margin: 0 auto; padding: 0; width: 100%; " width="100%">
+				<table role="presentation" align="left" border="0" cellpadding="0" valign="top" cellspacing="0" class="mobile-container blog-post-center blog-post-image-center" style="Margin: 0; border-collapse:collapse;border-spacing:0;margin:0 auto;padding:0;text-align:left;vertical-align:top;width:100%" width="100%">
+					<tr>
+						<!-- BEGIN POST 4 IMAGE 1 -->
+						<td align="left" valign="middle" bgcolor="#FFFFFF" class="hide_on_mobile" style="Margin: 0; text-align: left; width:175px; margin:0; padding: 0; display: inline-block; vertical-align: middle;" width="175">
+							<a href="http://click.malwarebytes.com/?qs=77e936dbd666ca97da6a2889a466a357fa9c61e08bde73657a052da090325992f7f39b2ff610f1e1f65c357c64220575a3a4002cca22b4e5" style="-moz-hyphens:none;-webkit-hyphens:none;Margin:0;margin:0 auto;padding: 0; color:#004DDC;font-family:'Locator', 'Open Sans', Helvetica,Arial,sans-serif;font-size:16px;font-weight:normal;hyphens:none;line-height:19px;overflow-wrap:normal;text-align:left; word-break:normal;width:100%; text-decoration: none;" class="body-links">
+								<img align="right" class="center-align-images hide_on_mobile" border="0" class="body-text-font" src="http://image.malwarebytes.com/lib/fe8c12737062017e72/m/2/68142c37-1c4b-4b0a-9102-8ec6663c5699.jpg" alt="Ransomware" style="-ms-interpolation-mode:bicubic; Margin: 0; margin: 0; display:block; outline:0; text-align:right; text-decoration:none; width:150px; padding: 0; border: 0; border-style: none; height: auto; " width="150" />
+							</a>
+						</td>
+						<!-- END POST 4 IMAGE 1 -->
+
+						<!-- BEGIN POST 4 [MOBILE] IMAGE 1 -->
+						<!--[if !mso]><!-->
+						<td align="left" valign="middle" bgcolor="#FFFFFF" class="one-hundred-percent show_on_mobile" style="width: 0; max-height: 0; overflow: hidden; float: left; display: none;" width="150">
+							<a href="http://click.malwarebytes.com/?qs=77e936dbd666ca97da6a2889a466a357fa9c61e08bde73657a052da090325992f7f39b2ff610f1e1f65c357c64220575a3a4002cca22b4e5" style="-moz-hyphens:none;-webkit-hyphens:none;Margin:0;margin:0 auto;padding: 0; color:#004DDC;font-family:'Locator', 'Open Sans', Helvetica,Arial,sans-serif;font-size:16px;font-weight:normal;hyphens:none;line-height:19px;overflow-wrap:normal;text-align:left; word-break:normal;width:100%; text-decoration: none;" class="body-links">
+								<img align="center" class="center-align-images mobile-image-90-percent" border="0" class="body-text-font" src="http://image.malwarebytes.com/lib/fe8c12737062017e72/m/2/b6eec867-42b5-44eb-940b-3a0a31cc98bc.jpg" alt="Ransomware" style="-ms-interpolation-mode:bicubic; Margin: 0; margin: 0 auto;  display:block; outline:0; text-align:center; text-decoration:none; padding: 0; border: 0; border-style: none; height: auto; " />
+							</a>
+						</td>
+						<!--<![endif]-->
+						<!-- END POST 4 [MOBILE] IMAGE 1 -->
+
+						<!-- BEGIN POST 4 PARAGRAPH 1 -->
+						<td align="left" bgcolor="#FFFFFF" class="one-hundred-percent" style="Margin: 0; text-align: left; margin: 0; padding: 0; width: 395px; display: inline-block;" width="395">
+							<table role="presentation" align="left" border="0" cellpadding="0" cellspacing="0" class="mobile-container" style="Margin: 0; margin: 0; border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:middle; width:100%;" width="100%">
+								<tbody>
+									<tr>
+										<td align="left" class="one-hundred-percent padding-top-adjust blog-post-center" style="Margin: 0; margin:0;padding:0;vertical-align: middle; display: block; width: 100%; text-align: left;" width="100%">
+											<h2 class="body-text-font padding-top-adjust blog-post-center" style="-moz-hyphens:none;-webkit-hyphens:none; Margin: 0; Margin-left: 20px; margin:0; margin-left: 20px; padding: 0; color:#141519;font-family:'Locator', 'Open Sans', Helvetica,Arial,sans-serif;font-size:16px;font-weight:bold;hyphens:none;line-height:19px;overflow-wrap:normal;text-align:left; word-break:normal;width:100%;" width="100%">	
+												<a href="http://click.malwarebytes.com/?qs=77e936dbd666ca97da6a2889a466a357fa9c61e08bde73657a052da090325992f7f39b2ff610f1e1f65c357c64220575a3a4002cca22b4e5" style="-moz-hyphens:none;-webkit-hyphens:none;Margin:0;margin:0 auto;padding: 0; color:#141519;font-family:inherit;font-size:inherit;font-weight:inherit;hyphens:none;line-height:inherit;overflow-wrap:normal;text-align:left; word-break:normal;width:100%; text-decoration: none;" class="gray-body-links">
+													Ransomware isn’t just a big city&nbsp;problem
+												</a>
+											</h2>
+										</td>
+									</tr>
+
+									<tr>
+										<td align="left" class="one-hundred-percent paragraph-top-padding" style="Margin: 0; margin:0;padding:0;vertical-align: middle; display: block; width: 100%; text-align: left;" width="100%">
+											<p class="body-text-font" style="-moz-hyphens:none;-webkit-hyphens:none; Margin: 0; Margin-left: 20px; margin:0; margin-left: 20px; padding: 0; padding-top: 4px; color:#414042;font-family:'Locator', 'Open Sans', Helvetica,Arial,sans-serif;font-size:16px; hyphens:none;line-height:19px;overflow-wrap:normal; text-align:left; word-break:normal;width:100%; font-weight: normal;" width="100%">
+												The ransomware world tour is coming to your town. Read up and learn how to avoid being&nbsp;a&nbsp;victim.
+											</p>
+										</td>
+									</tr>
+
+									<!-- BEGIN WHITE SPACER -->
+									<tr>
+										<td align="center" bgcolor="#FFFFFF" class="one-hundred-percent" height="8" style="Margin: 0; margin:0; padding: 0;text-align: center; width: 100%; display: block;" width="100%">
+											<span style="line-height: 0; font-size: 0;">&nbsp;</span>
+										</td>
+									</tr>		
+									<!-- END WHITE SPACER -->
+
+									<tr>
+										<td align="left" class="one-hundred-percent" style="Margin: 0; margin:0;padding:0; vertical-align: middle; display: block; width: 100%; text-align: left;" width="100%">
+											<p class="body-text-font" style="-moz-hyphens:none;-webkit-hyphens:none; Margin: 0; Margin-left: 20px; margin:0; margin-left: 20px; padding: 0; color:#0D3ECC;font-family:'Locator', 'Open Sans', Helvetica,Arial,sans-serif;font-size:16px;font-weight:normal;hyphens:none;line-height:19px;overflow-wrap:normal;text-align:left; word-break:normal;width:100%;" width="100%">
+												<a href="http://click.malwarebytes.com/?qs=77e936dbd666ca97da6a2889a466a357fa9c61e08bde73657a052da090325992f7f39b2ff610f1e1f65c357c64220575a3a4002cca22b4e5" style="-moz-hyphens:none;-webkit-hyphens:none;Margin:0;margin:0 auto;padding: 0; color:#0D3ECC;font-family:inherit;font-size:inherit;font-weight:normal;hyphens:none;line-height:inherit;overflow-wrap:normal;text-align:left; word-break:normal;width:100%; text-decoration: none;" class="body-links body-text-font">
+													Keep reading
+												</a>
+											</p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</td>
+						<!-- BEGIN POST 4 PARAGRAPH 1 -->
+					</tr>	
+				</table>
+			</td>
+		</tr>
+		<!-- END BLOG POST 4 -->			
+
+		<!-- BEGIN WHITE SPACER -->
+		<tr>
+			<td align="center" bgcolor="#FFFFFF" class="one-hundred-percent" height="26" style="Margin: 0; margin:0; padding: 0;text-align: center; width: 100%; display: block;" width="100%">
+				<span style="line-height: 0; font-size: 0;">&nbsp;</span>
+			</td>
+		</tr>		
+		<!-- END WHITE SPACER -->
+
+		<!-- BEGIN GRAY SPACER -->
+		<tr>
+			<td align="center" bgcolor="#F2F2F2" class="one-hundred-percent" height="30" style="Margin: 0; margin:0; padding: 0;text-align: center; width: 100%; display: block;" width="100%">
+				<span style="line-height: 0; font-size: 0;">&nbsp;</span>
+			</td>
+		</tr>		
+		<!-- END GRAY SPACER -->
+
+		<!-- BEGIN TIPS AND TRICKS HEADER TEXT -->
+        <tr>
+			<td align="left" bgcolor="#F2F2F2" class="one-hundred-percent" style="Margin: 0; margin: 0; text-align: left; width: 100%; padding: 0;" width="100%">
+				<p  class="title-text-size blog-post-center" align="left" style="-moz-hyphens:none; -ms-word-break:normal;-webkit-hyphens:none; Margin: 0; Margin-left: 25px; margin: 0; margin-left: 25px; color:#004DDC;font-family:'Locator', 'Open Sans', Helvetica,Arial,sans-serif; font-size:28px; font-weight:500; hyphens:none; line-height:34px; padding:0; text-align:left; white-space:normal; word-break:normal;width: 100%; display: block;" width="100%">
+				Take the newsletter reader&nbsp;survey
+				</p>
+			</td>
+		</tr>
+		<!-- END TIPS AND TRICKS HEADER TEXT -->		
+
+		<!-- BEGIN GRAY SPACER -->
+		<tr>
+			<td align="center" bgcolor="#F2F2F2" class="one-hundred-percent height-20-spacer-adjust hide" height="6" style="Margin: 0; margin:0; padding: 0;text-align: center; width: 100%; display: block;" width="100%">
+			</td>
+		</tr>		
+		<!-- END GRAY SPACER -->		
+
+		<!-- BEGIN HIGHLIGHTS CONTENT -->
+		<tr>
+			<td align="center" bgcolor="#F2F2F2" class="one-hundred-percent" style="Margin: 0; text-align: left; margin: 0 auto; padding: 0; width: 100%;" width="100%">
+				<table role="presentation" align="left" border="0" cellpadding="0" cellspacing="0" class="mobile-container" style="Margin: 0; border-collapse:collapse;border-spacing:0;margin:0 auto;padding:0;text-align:left;vertical-align:top;width:100%;" width="100%">
+					<tr>
+						<!-- COLUMN SPACER -->
+						<td align="left" bgcolor="#F2F2F2" class="one-hundred-percent hide_on_mobile" valign="middle" style="Margin: 0; text-align: left; margin: 0 auto; padding: 0; width: 25px; display: inline-block; vertical-align: middle;" width="25">
+						</td>
+						<!-- COLUMN SPACER -->
+
+						<!-- BEGIN HIGHLIGHTS PARAGRAPHS -->
+						<td align="left" bgcolor="#F2F2F2" class="one-hundred-percent" valign="top" style="Margin: 0; text-align: left; margin: 0 auto; padding: 0; width: 375px; display: inline-block; vertical-align: top;" width="375">
+							<table role="presentation" align="left" border="0" cellpadding="0" cellspacing="0" class="mobile-container" style="Margin: 0; border-collapse:collapse;border-spacing:0;margin:0;padding:0; text-align:left;vertical-align:middle; width:100%" width="100%">
+								<tbody>									
+
+									<tr>
+										<td align="left" class="one-hundred-percent paragraph-top-padding-11" style="Margin: 0; margin:0;padding:0; vertical-align: middle; display: block; width: 100%; text-align: left;" width="100%">
+											<p class="body-text-font blog-post-center blog-content-right-padding" style="-moz-hyphens:none;-webkit-hyphens:none;Margin:0; margin:0; padding: 0; padding-top: 11px; color:#414042;font-family:'Locator', 'Open Sans', Helvetica,Arial,sans-serif;font-size:16px;font-weight:normal;hyphens:none;line-height:19px;overflow-wrap:normal;text-align:left; word-break:normal;width:100%;" width="100%">
+											Take the reader survey and tell us what you think about the newsletters you receive. Needs more this or that? Goldilocks? Let&nbsp;us&nbsp;know.     
+											</p>
+										</td>
+									</tr>
+
+									<!-- BEGIN GRAY SPACER -->
+									<tr>
+										<td align="center" bgcolor="#F2F2F2" class="one-hundred-percent" height="11" style="Margin: 0; margin:0; padding: 0;text-align: center; width: 100%; display: block;" width="100%">
+											<span style="line-height: 0; font-size: 0;">&nbsp;</span>
+										</td>
+									</tr>		
+									<!-- END GRAY SPACER -->									
+
+									<tr>
+										<td align="left" class="one-hundred-percent" style="Margin: 0; margin:0;padding:0; vertical-align: middle; display: block; width: 100%; text-align: left;" width="100%">
+											<p class="body-text-font blog-post-center" style="-moz-hyphens:none;-webkit-hyphens:none;Margin:0; margin:0; padding: 0; color:#004DDC;font-family:'Locator', 'Open Sans', Helvetica,Arial,sans-serif;font-size:16px;font-weight:normal;hyphens:none;line-height:19px;overflow-wrap:normal;text-align:left; word-break:normal;width:100%;" width="100%">
+												<a href="http://click.malwarebytes.com/?qs=77e936dbd666ca9748b1f97b56761eca062fb6e7f7a3d3b30962301f4cb863bc4418af315d61d8563296b73b30c600d8cfe93a95b395c384" style="-moz-hyphens:none;-webkit-hyphens:none;Margin:0;margin:0 auto;padding: 0; color:#004DDC;font-family:inherit;font-size:inherit;font-weight:normal;hyphens:none;line-height:inherit;overflow-wrap:normal;text-align:left; word-break:normal;width:100%; text-decoration: none;" class="body-links">
+													<strong>Start the survey</strong><br/><br/>
+												</a>
+											</p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</td>
+						<!-- BEGIN HIGHLIGHTS PARAGRAPHS -->					
+
+						<!-- BEGIN HIGHLIGHTS IMAGE -->
+						<td align="left" valign="middle" bgcolor="#F2F2F2" class="one-hundred-percent" style="Margin: 0; text-align: left; width:165px; margin:0; padding: 0; padding-left: 0px; display: inline-block; vertical-align: middle;" width="165">
+							<a href="http://click.malwarebytes.com/?qs=77e936dbd666ca9748b1f97b56761eca062fb6e7f7a3d3b30962301f4cb863bc4418af315d61d8563296b73b30c600d8cfe93a95b395c384" style="-moz-hyphens:none;-webkit-hyphens:none;Margin:0;margin:0 auto;padding: 0; color:#004DDC;font-family:'Locator', 'Open Sans', Helvetica,Arial,sans-serif;font-size:16px;font-weight:normal;hyphens:none;line-height:19px;overflow-wrap:normal;text-align:left; word-break:normal;width:100%; text-decoration: none;" class="body-links">
+								<img align="right" class="center-align-images" border="0" class="body-text-font" src="http://image.malwarebytes.com/lib/fe8c12737062017e72/m/2/3f4a9799-b311-4e8c-b8db-17bad410816b.jpg" alt="survey" style="-ms-interpolation-mode:bicubic; Margin: 0; margin: 0; display:block; outline:0; text-align:right; text-decoration:none; width:145px; padding: 0; border: 0; border-style: none; height: auto; " width="145" />
+							</a>
+						</td>
+						<!-- END HIGHLIGHTS IMAGE -->
+					</tr>	
+				</table>
+			</td>
+		</tr>
+		<!-- END HIGHLIGHTS CONTENT -->		
+
+        <!-- BEGIN GRAY SPACER -->
+		<tr>
+			<td align="center" bgcolor="#F2F2F2" class="one-hundred-percent" height="30" style="Margin: 0; margin:0; padding: 0;text-align: center; width: 100%; display: block;" width="100%">
+				<span style="line-height: 0; font-size: 0;">&nbsp;</span>
+			</td>
+		</tr>		
+		<!-- END GRAY SPACER -->
+
+		<!-- BEGIN WHITE SPACER -->
+		<tr>
+			<td align="center" bgcolor="#FFFFFF" class="one-hundred-percent section-spacer-adjust" height="60" style="Margin: 0; margin:0; padding: 0;text-align: center; width: 100%; display: block;" width="100%">
+				<span style="line-height: 0; font-size: 0;">&nbsp;</span>
+			</td>
+		</tr>		
+		<!-- END WHITE SPACER -->	
+
+		<!-- BEGIN STORIES -->
+		<tr>
+			<td align="center" class="one-hundred-percent" style="Margin: 0; text-align: left; margin: 0 auto; padding: 0; width: 100%; " width="100%">
+				<table role="presentation" align="left" border="0" cellpadding="0" cellspacing="0" class="mobile-container" style="Margin: 0; border-collapse:collapse;border-spacing:0;margin:0 auto;padding:0;text-align:left;vertical-align:top;width:100%;" width="100%">
+					<tr>
+						<td align="center" bgcolor="#ffffff" class="one-hundred-percent" style="Margin: 0; text-align: center; width: 100%;margin:0; padding: 0;" width="100%">
+							<h2 align="left" class="blog-post-center title-text-size" style="-moz-hyphens:none; -ms-word-break:normal;-webkit-hyphens:none;Margin: 0; Margin-left: 25px; margin:0; margin-left: 25px;  color:#0D3ECC;font-family: 'Locator', 'Open Sans', Helvetica,Arial,sans-serif; font-size:28px; font-weight:500; hyphens:none; line-height:34px; padding:0; text-align:left; white-space:normal; word-break:normal;width: 100%; display: block;" width="100%">
+								Getting the most out of your&nbsp;Malwarebytes
+							</h2>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<!-- END STORIES -->
+
+		<!-- BEGIN WHITE SPACER -->
+		<tr>
+			<td align="center" bgcolor="#FFFFFF" class="one-hundred-percent" height="19" style="Margin: 0; margin:0; padding: 0;text-align: center; width: 100%; display: block;" width="100%">
+				<span style="line-height: 0; font-size: 0;">&nbsp;</span>
+			</td>
+		</tr>		
+		<!-- END WHITE SPACER -->	
+
+		<!-- BEGIN BLOG GETTING THE MOST -->
+		<tr>
+			<td align="center" bgcolor="#FFFFFF" class="one-hundred-percent" style="Margin: 0; text-align: left; margin: 0 auto; padding: 0; width: 100%; " width="100%">
+				<table role="presentation" align="left" border="0" cellpadding="0" valign="top" cellspacing="0" class="mobile-container blog-post-center blog-post-image-center" style="Margin: 0; border-collapse:collapse;border-spacing:0;margin:0 auto;padding:0;text-align:left;vertical-align:top;width:100%" width="100%">
+					<tr>
+						<!-- BEGIN GETTING THE MOST IMAGE 1 -->
+						<td align="left" valign="top" bgcolor="#FFFFFF" class="hide_on_mobile" style="Margin: 0; text-align: left; width:165px; margin:0; padding: 0; display: inline-block; vertical-align: top;" width="165">
+							<a href="http://click.malwarebytes.com/?qs=77e936dbd666ca970dddc4761dc990a0f214c4512567ef014b8b946bad323a9a42a1f1b2773f2f5562206fa742610c26d821d5fdc4d56b90" style="-moz-hyphens:none;-webkit-hyphens:none;Margin:0;margin:0 auto;padding: 0; color:#004DDC;font-family:'Locator', 'Open Sans', Helvetica,Arial,sans-serif;font-size:16px;font-weight:normal;hyphens:none;line-height:19px;overflow-wrap:normal;text-align:left; word-break:normal;width:100%; text-decoration: none;" class="body-links">
+								<img align="right" class="center-align-images" border="0" class="body-text-font" src="http://image.malwarebytes.com/lib/fe8c12737062017e72/m/2/908ae371-66fd-46e1-b566-ebc9d42be3d8.jpeg" alt="Getting the most" style="-ms-interpolation-mode:bicubic; Margin: 0; margin: 0; display:block; outline:0; text-align:right; text-decoration:none; width:145px; padding: 0; border: 0; border-style: none; height: auto; " width="145" />
+							</a>
+						</td>
+						<!-- END GETTING THE MOST IMAGE 1 -->
+
+						<!-- BEGIN GETTING THE MOST [MOBILE] IMAGE 1 -->
+
+						<!-- BEGIN GETTING THE MOST PARAGRAPH 1 -->
+						<td align="left" bgcolor="#FFFFFF" valign="top" class="one-hundred-percent" style="Margin: 0; text-align: left; margin: 0; padding: 0; width: 375px; display: inline-block; vertical-align: top;" width="375">
+							<table role="presentation" align="left" border="0" cellpadding="0" cellspacing="0" class="mobile-container" style="Margin: 0; margin: 0; border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top; width:100%;" width="100%">
+								<tbody>
+         <tr>
+										<td align="left" class="one-hundred-percent" style="Margin: 0; margin:0;padding:0;vertical-align: middle; display: block; width: 100%; text-align: left;" width="100%">
+											<h2 class="body-text-font padding-top-adjust blog-post-center" style="-moz-hyphens:none;-webkit-hyphens:none; Margin: 0; Margin-left: 20px; margin:0; margin-left: 20px; padding: 0; color:#141519;font-family:'Locator', 'Open Sans', Helvetica,Arial,sans-serif;font-size:16px;font-weight:bold;hyphens:none;line-height:19px;overflow-wrap:normal;text-align:left; word-break:normal;width:100%;" width="100%">	
+												<a href="http://click.malwarebytes.com/?qs=77e936dbd666ca970dddc4761dc990a0f214c4512567ef014b8b946bad323a9a42a1f1b2773f2f5562206fa742610c26d821d5fdc4d56b90" style="-moz-hyphens:none;-webkit-hyphens:none;Margin:0;margin:0 auto;padding: 0; color:#141519;font-family:inherit;font-size:inherit;font-weight:inherit;hyphens:none;line-height:inherit;overflow-wrap:normal;text-align:left; word-break:normal;width:100%; text-decoration: none;" class="gray-body-links">
+													Read all the latest news from Malwarebytes Labs on your&nbsp;iOS&nbsp;device 
+												</a>
+											</h2>
+										</td>
+									</tr>
+									<tr>
+										<td align="left" class="one-hundred-percent" style="Margin: 0; margin:0;padding:0;vertical-align: middle; display: block; width: 100%; text-align: left;" width="100%">
+											<p class="body-text-font" style="-moz-hyphens:none;-webkit-hyphens:none; Margin: 0; Margin-left: 20px; margin:0; margin-left: 20px; padding: 0; padding-top: 4px; color:#414042;font-family:'Locator', 'Open Sans', Helvetica,Arial,sans-serif;font-size:16px; hyphens:none;line-height:19px;overflow-wrap:normal; text-align:left; word-break:normal;width:100%; font-weight: normal;" width="100%">
+												The latest stories from our blog are now In your <a href="http://click.malwarebytes.com/?qs=77e936dbd666ca970065a477f09120ba07253da5d622cdd66dae1cbd7224c5256ee3ae1dc0749699e8176e7d5906df7bc03aa289bfa2e4f3" style="-moz-hyphens:none;-webkit-hyphens:none;Margin:0;margin:0 auto;padding: 0; color:#141519;font-family:inherit;font-size:inherit;font-weight:inherit;hyphens:none;line-height:inherit;overflow-wrap:normal;text-align:left; word-break:normal;width:100%; text-decoration: none;" class="body-links">Malwarebytes for iOS app.</a> Stay safe and up-to-date, all in one&nbsp;place. 
+											</p>
+										</td>
+									</tr>
+
+									<!-- BEGIN WHITE SPACER -->
+									<tr>
+										<td align="center" bgcolor="#FFFFFF" class="one-hundred-percent" height="8" style="Margin: 0; margin:0; padding: 0;text-align: center; width: 100%; display: block;" width="100%">
+											<span style="line-height: 0; font-size: 0;">&nbsp;</span>
+										</td>
+									</tr>		
+									<!-- END WHITE SPACER -->
+
+									<tr>
+										<td align="left" class="one-hundred-percent" style="Margin: 0; margin:0;padding:0; vertical-align: middle; display: block; width: 100%; text-align: left;" width="100%">
+											<p class="body-text-font" style="-moz-hyphens:none;-webkit-hyphens:none; Margin: 0; Margin-left: 20px; margin:0; margin-left: 20px; padding: 0; color:#0D3ECC;font-family:'Locator', 'Open Sans', Helvetica,Arial,sans-serif;font-size:16px;font-weight:normal;hyphens:none;line-height:19px;overflow-wrap:normal;text-align:left; word-break:normal;width:100%;" width="100%">
+												<a href="http://click.malwarebytes.com/?qs=77e936dbd666ca970dddc4761dc990a0f214c4512567ef014b8b946bad323a9a42a1f1b2773f2f5562206fa742610c26d821d5fdc4d56b90" style="-moz-hyphens:none;-webkit-hyphens:none;Margin:0;margin:0 auto;padding: 0; color:#0D3ECC;font-family:inherit;font-size:inherit;font-weight:normal;hyphens:none;line-height:inherit;overflow-wrap:normal;text-align:left; word-break:normal;width:100%; text-decoration: none;" class="body-links body-text-font">
+													Keep reading 
+												</a>
+											</p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</td>
+						<!-- BEGIN GETTING THE MOST PARAGRAPH 1 -->
+					</tr>	
+				</table>
+			</td>
+		</tr>
+		<!-- END BLOG GETTING THE MOST -->
+        
+		<!-- BEGIN WHITE SPACER -->
+		<tr>
+			<td align="center" bgcolor="#FFFFFF" class="one-hundred-percent section-spacer-adjust" height="60" style="Margin: 0; margin:0; padding: 0;text-align: center; width: 100%; display: block;" width="100%">
+				<span style="line-height: 0; font-size: 0;">&nbsp;</span>
+			</td>
+		</tr>		
+		<!-- END WHITE SPACER -->
+
+		<!-- BEGIN GRAY SPACER -->
+		<tr>
+			<td align="center" bgcolor="#F2F2F2" class="one-hundred-percent" height="62" style="Margin: 0; margin:0; padding: 0;text-align: center; width: 100%; display: block;" width="100%">
+				<span style="line-height: 0; font-size: 0;">&nbsp;</span>
+			</td>
+		</tr>		
+		<!-- END GRAY SPACER -->
+
+		<!-- BEGIN TIPS AND TRICKS HEADER TEXT -->
+        <tr>
+			<td align="center" bgcolor="#F2F2F2" class="one-hundred-percent" style="Margin: 0; text-align: left; margin: 0 auto; padding: 0; width: 100%; " width="100%">
+				<table role="presentation" align="left" border="0" cellpadding="0" valign="top" cellspacing="0" class="mobile-container" style="Margin: 0; border-collapse:collapse;border-spacing:0;margin:0;padding:0;text-align:left;vertical-align:top;width:100%" width="100%">
+					<tr>
+						<!-- BEGIN COLUMN SPACER -->
+						<td align="left" bgcolor="#F2F2F2" class="hide_on_mobile" style="Margin: 0; text-align: left; width: 22px;margin:0; padding: 0; display: inline-block; border: 1px solid #F2F2F2;" width="22">
+						</td>
+						<!-- END COLUMN SPACER -->
+
+						<!-- BEGIN CUSTOMER LOVE -->
+						<td align="left" bgcolor="#F2F2F2" class="width-100-percent blog-post-center" valign="middle" style="Margin: 0; margin:0;padding:0;vertical-align: middle; display: inline-block; width: 500px; text-align: left;" width="500">
+							<h2 class="title-text-size blog-post-center" valign="middle" style="-moz-hyphens:none;-webkit-hyphens:none; Margin: 0; margin:0; padding: 0; color:#0D3ECC;font-family:'Locator', Helvetica,Arial,sans-serif;font-size:28px;font-weight:bold;hyphens:none;line-height:1em;overflow-wrap:normal;text-align:left; word-break:normal;width:100%; vertical-align: middle;" width="100%">	
+								<img align="left" class="center-align-images" border="0" src="http://image.malwarebytes.com/lib/fe8c12737062017e72/m/2/1719c685-4c9f-4a5a-bc1e-8d432b11e3ea.png" alt="Customer love" style="-ms-interpolation-mode:bicubic; Margin: 0; margin: 0; display:inline-block; outline:0; text-align:left; text-decoration:none; width:28px; padding: 0; border: 0; border-style: none; height: auto; line-height: inherit; vertical-align: middle;" width="28" />&nbsp;Customer&nbsp;love
+							</h2>
+						</td>
+						<!-- END CUSTOMER LOVE -->
+					</tr>	
+				</table>
+			</td>
+		</tr>
+		<!-- END TIPS AND TRICKS HEADER TEXT -->		
+
+		<!-- BEGIN GRAY SPACER -->
+		<tr>
+			<td align="center" bgcolor="#F2F2F2" class="one-hundred-percent height-20-spacer-adjust" height="6" style="Margin: 0; margin:0; padding: 0; background-color:#F2F2F2; text-align: center; width: 100%; display: block;" width="100%">
+				<span style="line-height: 0; font-size: 0; display: none;">&nbsp;</span>
+			</td>
+		</tr>		
+		<!-- END GRAY SPACER -->		
+
+		<!-- BEGIN CUSTOMER QUOTES CONTENT -->
+		<tr>
+			<td align="center" bgcolor="#F2F2F2" class="one-hundred-percent" style="Margin: 0; text-align: left; margin: 0 auto; padding: 0; width: 100%;" width="100%">
+				<table role="presentation" align="left" border="0" cellpadding="0" cellspacing="0" class="mobile-container" style="Margin: 0; border-collapse:collapse;border-spacing:0;margin:0 auto;padding:0;text-align:left;vertical-align:top;width:100%;" width="100%">
+					<tr>
+						<!-- BEGIN CUSTOMER QUOTES PARAGRAPH 1 -->
+						<td align="left" bgcolor="#F2F2F2" class="one-hundred-percent" valign="top" style="Margin: 0; text-align: left; margin: 0 auto; padding: 0; width: 250px; display: inline-block; vertical-align: top;" width="250">
+							<table role="presentation" align="left" border="0" cellpadding="0" cellspacing="0" class="mobile-container" style="Margin: 0; border-collapse:collapse;border-spacing:0;margin:0;padding:0; text-align:left;vertical-align:middle; width:250px;" width="250">
+								<tbody>
+									<tr>
+										<td align="left" bgcolor="#F2F2F2" valign="middle" class="one-hundred-percent paragraph-top-padding-11" style="Margin: 0; margin:0;padding:0; vertical-align: middle; display: block; width: 90%; text-align: left;" width="90%">
+											<p class="body-text-font blog-post-center blog-content-right-padding" style="-moz-hyphens:none;-webkit-hyphens:none;Margin:0; Margin-left: 25px; margin:0; margin-left: 25px; padding: 0; padding-top: 11px; color:#414042;font-family:'Locator', 'Open Sans', Helvetica,Arial,sans-serif;font-size:16px;font-weight:normal;hyphens:none;line-height:19px;overflow-wrap:normal;text-align:left; word-break:normal;width:100%;" width="100%">
+												“Malwarebytes is one of the veterans of anti-malware software ... Malwarebytes is often able to capture threats that traditional antivirus software cannot&nbsp;find.” 
+      											
+      											<br>
+      											<br>
+      											<span style="color:#004DDC; font-weight: bold;"><b>Kevin Y. </b></span>
+
+      											<br>
+      											<span style="color:#004DDC; font-style: italic; font-weight: bold;"><b>Taipei</b></span>
+											</p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</td>
+						<!-- BEGIN CUSTOMER QUOTES PARAGRAPH 1 -->
+
+						<!-- BEGIN COLUMN SPACER -->
+						<td align="left" bgcolor="#F2F2F2" class="hide_on_mobile" style="Margin: 0; text-align: left; width: 30px;margin:0; padding: 0; display: inline-block; border: 1px solid #F2F2F2;" width="30">
+							<span style="line-height: 0; font-size: 0;display: none;">&nbsp;</span>
+						</td>
+						<!-- END COLUMN SPACER -->
+
+						<!-- BEGIN CUSTOMER QUOTES PARAGRAPH 2 -->
+						<td align="left" bgcolor="#F2F2F2" class="one-hundred-percent" valign="top" style="Margin: 0; text-align: left; margin: 0 auto; padding: 0; width: 250px; display: inline-block; vertical-align: top;" width="250">
+							<table role="presentation" align="left" border="0" cellpadding="0" cellspacing="0" class="mobile-container" style="Margin: 0; border-collapse:collapse;border-spacing:0;margin:0;padding:0; text-align:left;vertical-align:middle; width:250px;" width="250">
+								<tbody>
+									<tr>
+										<td align="left" bgcolor="#F2F2F2" class="one-hundred-percent padding-top-adjust" style="Margin: 0; margin:0;padding:0; vertical-align: middle; display: block; width: 90%; text-align: left;" width="90%">
+											<p class="body-text-font blog-post-center blog-content-right-padding" style="-moz-hyphens:none;-webkit-hyphens:none;Margin:0; Margin-left: 25px; margin:0; margin-left: 25px; padding: 0; padding-top: 11px; color:#414042;font-family:'Locator', 'Open Sans', Helvetica,Arial,sans-serif;font-size:16px;font-weight:normal;hyphens:none;line-height:19px;overflow-wrap:normal;text-align:left; word-break:normal;width:100%;" width="100%">
+												“Saved my *ss a few times 😂 Love the work you guys do though, seriously.”
+
+												<br>
+      											<br>
+      											<span style="color:#004DDC; font-weight: bold;"><b>Chris R.</b></span>
+
+      											<br>
+      											<span style="color:#004DDC; font-style: italic; font-weight: bold;"><b>Nottingham </b></span>
+											</p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</td>
+						<!-- BEGIN CUSTOMER QUOTES PARAGRAPH 2 -->					
+					</tr>	
+				</table>
+			</td>
+		</tr>
+		<!-- END CUSTOMER QUOTES CONTENT -->	
+
+		<!-- BEGIN GRAY SPACER -->
+		<tr>
+			<td align="center" bgcolor="#F2F2F2" class="one-hundred-percent" height="62" style="Margin: 0; margin:0; padding: 0;text-align: center; width: 100%; display: block;" width="100%">
+				<span style="line-height: 0; font-size: 0; display: none;">&nbsp;</span>
+			</td>
+		</tr>		
+		<!-- END GRAY SPACER -->
+
+        <!-- BEGIN WHITE SPACER -->
+		<tr>
+			<td align="center" bgcolor="#FFFFFF" class="one-hundred-percent" height="60" style="Margin: 0; margin:0; padding: 0;text-align: center; width: 100%; display: block;" width="100%">
+				<span style="line-height: 0; font-size: 0;">&nbsp;</span>
+			</td>
+		</tr>		
+		<!-- END WHITE SPACER -->	
+
+		<!-- BEGIN PROTECTION HEADER TEXT -->
+		<tr>
+			<td align="center" bgcolor="#FFFFFF" class="one-hundred-percent" style="Margin: 0; text-align: left; width: 100%;margin:0 auto; padding: 0;" width="100%">
+				<h2 align="center" class="title-text-size title-width-adjust" style="-moz-hyphens:none; -ms-word-break:normal;-webkit-hyphens:none;Margin:0;margin:0;color:#0D3ECC;font-family:'Locator', 'Open Sans', Helvetica,Arial,sans-serif; font-size:24px; font-weight:bold; hyphens:none; line-height:29px;margin:0 auto; padding:0; text-align:center; white-space:normal; word-break:normal;width: 100%; display: block;" width="100%">
+				Protection for you, anywhere, on any&nbsp;device
+				</h2>
+			</td>
+		</tr>
+		<!-- END PROTECTION HEADER TEXT -->
+  
+  <!-- BEGIN PROTECTION PARAGRAPH --> 
+  <tr>
+			<td class="one-hundred-percent" style="Margin: 0; text-align: left; width: 100%;margin:0 auto; padding: 0;" width="100%" bgcolor="#FFFFFF" align="center">
+			<p class="body-text-font blog-post-center blog-content-right-padding" style="-moz-hyphens:none;-webkit-hyphens:none;Margin:0; Margin-left: 0px; margin:0; margin-left: 0px; padding: 0; padding-top: 11px; color:#414042;font-family:'Locator', 'Open Sans', Helvetica,Arial,sans-serif;font-size:16px;font-weight:normal;hyphens:none;line-height:19px;overflow-wrap:normal;text-align:center; word-break:normal;width:100%;" width="100%">
+									Malwarebytes offers innovative (and free) cybersecurity for your Windows, Mac, Android, Chromebook, and iOS&nbsp;devices.												
+											</p>
+			</td>
+		</tr>
+  <!-- END PROTECTION PARAGRAPH -->
+
+		<!-- BEGIN GRAY SPACER -->
+		<tr>
+			<td align="center" bgcolor="#FFFFFF" class="one-hundred-percent" height="25" style="Margin: 0; margin:0; padding: 0;text-align: center; width: 100%; display: block;" width="100%">
+			</td>
+		</tr>		
+		<!-- END GRAY SPACER -->	
+
+		<!-- BEGIN DEVICE CONTENT -->
+		<tr>
+			<td align="center" bgcolor="#FFFFFF" class="one-hundred-percent" style="Margin: 0; text-align: left; margin: 0 auto; padding: 0; width: 100%;" width="100%">
+				<table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" class="mobile-container" style="Margin: 0; border-collapse:collapse;border-spacing:0;margin:0 auto;padding:0;text-align:center;vertical-align:top;width:540px; overflow: hidden; " width="540">
+					<tr>
+						<!-- BEGIN WINDOWS DEVICE CONTENT -->
+						<td align="center" bgcolor="#FFFFFF" class="one-hundred-percent" style="Margin: 0; text-align: center; margin: 0 auto; padding: 0; width: 174px; display: inline-block; vertical-align: top; border: 0; border-right: 1px solid #E1E1E1;" width="174">
+							<table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" class="mobile-container" style="Margin: 0; border-collapse:collapse;border-spacing:0;margin:0;padding:0; text-align:center;vertical-align:top; width:173px;" width="173">
+								<tbody>
+									<!-- BEGIN IMAGE -->
+									<tr>
+										<td align="center" bgcolor="#FFFFFF" valign="middle" class="one-hundred-percent" style="Margin: 0; text-align: center; width:23px; margin:0 auto; padding: 0; display: block; vertical-align: middle;" width="23">
+											<a href="http://click.malwarebytes.com/?qs=77e936dbd666ca97823e5d73e8e35549708ce4f73283d8c8a8acce0431eacec1386f4cd5756700bbf86477ee69aeb35d959eb3345c5f7e85" style="-moz-hyphens:none;-webkit-hyphens:none;Margin:0;margin:0 auto;padding: 0; color:#004DDC;font-family:'Locator', 'Open Sans', Helvetica,Arial,sans-serif;font-size:16px;font-weight:normal;hyphens:none;line-height:19px;overflow-wrap:normal;text-align:center; word-break:normal;width:100%; text-decoration: none;" class="body-links">
+												<img align="center" border="0" class="center-align-images" src="http://image.malwarebytes.com/lib/fe8c12737062017e72/m/2/fa0e710c-bd50-4f6d-b910-3b4a2e269870.png" alt="Windows " style="-ms-interpolation-mode:bicubic; margin:0 auto; display:block; outline:0; text-align:center; text-decoration:none; width:23px; padding: 0; border: 0; border-style: none; height: auto;" width="23" />
+											</a>
+										</td>
+									</tr>
+									<!-- END IMAGE -->
+
+									<!-- BEGIN WHITE SPACER -->
+									<tr>
+										<td align="center" bgcolor="#FFFFFF" valign="middle" class="one-hundred-percent" height="11" style="Margin: 0; margin:0; padding: 0;text-align: center; width: 100%; display: block;" width="100%">
+											<span style="line-height: 0; font-size: 0;">&nbsp;</span>
+										</td>
+									</tr>		
+									<!-- END WHITE SPACER -->
+
+									<!-- BEGIN TEXT -->
+									<tr>
+										<td align="center" class="one-hundred-percent" valign="middle" style="Margin: 0; margin:0;padding:0;vertical-align: middle; display: block; width: 100%; text-align: left;" width="100%">
+											<p class="body-text-font paragraph-width-adjust" style="-moz-hyphens:none;-webkit-hyphens:none;Margin:0;margin:0; padding: 0; color:#414042;font-family:'Locator', 'Open Sans', Helvetica,Arial,sans-serif;font-size:16px; hyphens:none;line-height:19px;overflow-wrap:normal; text-align:center; word-break:normal;width:100%; font-weight: bold;" width="100%">	
+												<a href="http://click.malwarebytes.com/?qs=77e936dbd666ca97823e5d73e8e35549708ce4f73283d8c8a8acce0431eacec1386f4cd5756700bbf86477ee69aeb35d959eb3345c5f7e85" style="-moz-hyphens:none;-webkit-hyphens:none;Margin:0;margin:0 auto;padding: 0; color:#414042;font-family:inherit;font-size:inherit;font-weight:bold;hyphens:none;line-height:inherit;overflow-wrap:normal;text-align:center; word-break:normal;width:100%; text-decoration: none;" class="gray-body-links">
+													Malwarebytes for&nbsp;Windows 
+												</a>
+            <br>
+            <a href="http://click.malwarebytes.com/?qs=77e936dbd666ca97823e5d73e8e35549708ce4f73283d8c8a8acce0431eacec1386f4cd5756700bbf86477ee69aeb35d959eb3345c5f7e85" style="-moz-hyphens:none;-webkit-hyphens:none;Margin:0;margin:0 auto;padding: 0; color:#0D3ECC;font-family:inherit;font-size:inherit;font-weight:normal;hyphens:none;line-height:inherit;overflow-wrap:normal;text-align:left; word-break:normal;width:100%; text-decoration: none;" class="body-links body-text-font">
+													Learn more 
+												</a>
+											</p>
+										</td>
+									</tr>
+									<!-- END TEXT -->
+         
+         
+								</tbody>
+							</table>
+						</td>
+						<!-- END WINDOWS DEVICE CONTENT -->
+                        
+                        <!-- BEGIN MAC DEVICE CONTENT -->
+						<td align="center" bgcolor="#FFFFFF" class="one-hundred-percent" style="Margin: 0; text-align: center; margin: 0 auto; padding: 0; width: 174px; display: inline-block; vertical-align: top; border: 0; border-right: 1px solid #E1E1E1;" width="174">
+							<table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" class="mobile-container" style="Margin: 0; border-collapse:collapse;border-spacing:0;margin:0;padding:0; text-align:center;vertical-align:top; width:173px" width="173">
+								<tbody>
+									<!-- BEGIN IMAGE -->
+									<tr>
+										<td align="center" bgcolor="#FFFFFF" class="one-hundred-percent" style="Margin: 0; text-align: center; width:23px; margin:0 auto; padding: 0; display: block;" width="23">
+											<a href="http://click.malwarebytes.com/?qs=77e936dbd666ca973316ceb6d0741e9bb6c214f834efda7a019a73abaf3d4ec7bce94c32faf850386e1bd4a5647434a6ad4e0ef922ca743e" style="-moz-hyphens:none;-webkit-hyphens:none;Margin:0;margin:0 auto;padding: 0; color:#004DDC;font-family:'Locator', 'Open Sans', Helvetica,Arial,sans-serif;font-size:16px;font-weight:normal;hyphens:none;line-height:19px;overflow-wrap:normal;text-align:center; word-break:normal;width:100%; text-decoration: none;" class="body-links">
+												<img align="center" border="0" class="center-align-images padding-top-adjust-10" src="http://image.malwarebytes.com/lib/fe8c12737062017e72/m/2/be439b89-cee2-423c-96e2-f0fa3798edf9.png" alt="Mac " style="-ms-interpolation-mode:bicubic; margin:0 auto; display:block; outline:0; text-align:center; text-decoration:none; width:23px; padding: 0; border: 0; border-style: none; height: auto;" width="23" />
+											</a>
+										</td>
+									</tr>
+									<!-- END IMAGE -->
+
+									<!-- BEGIN WHITE SPACER -->
+									<tr>
+										<td align="center" bgcolor="#FFFFFF" class="one-hundred-percent" height="11" style="Margin: 0; margin:0; padding: 0;text-align: center; width: 100%; display: block;" width="100%">
+											<span style="line-height: 0; font-size: 0;">&nbsp;</span>
+										</td>
+									</tr>		
+									<!-- END WHITE SPACER -->
+
+									<!-- BEGIN TEXT -->
+									<tr>
+										<td align="center" class="one-hundred-percent" style="Margin: 0; margin:0 auto;padding:0;vertical-align: middle; display: block; width: 110px; text-align: left;" width="110">
+											<table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" class="mobile-container" style="Margin: 0; border-collapse:collapse;border-spacing:0;margin:0;padding:0; text-align:center;vertical-align:top; width:110px" width="110">
+												<tr>
+													<p class="body-text-font paragraph-width-adjust" style="-moz-hyphens:none;-webkit-hyphens:none;Margin:0 auto;margin:0; padding: 0; color:#414042;font-family:'Locator', 'Open Sans', Helvetica,Arial,sans-serif;font-size:16px; hyphens:none;line-height:19px;overflow-wrap:normal; text-align:center; word-break:normal;width:100%; font-weight: bold;" width="100%">	
+														<a href="http://click.malwarebytes.com/?qs=77e936dbd666ca973316ceb6d0741e9bb6c214f834efda7a019a73abaf3d4ec7bce94c32faf850386e1bd4a5647434a6ad4e0ef922ca743e" style="-moz-hyphens:none;-webkit-hyphens:none;Margin:0;margin:0 auto;padding: 0; color:#414042;font-family:inherit;font-size:inherit;font-weight:bold;hyphens:none;line-height:inherit;overflow-wrap:normal;text-align:center; word-break:normal;width:100%; text-decoration: none;" class="gray-body-links">
+															Malwarebytes for&nbsp;Mac
+														</a>
+              <br>
+              <a href="http://click.malwarebytes.com/?qs=77e936dbd666ca973316ceb6d0741e9bb6c214f834efda7a019a73abaf3d4ec7bce94c32faf850386e1bd4a5647434a6ad4e0ef922ca743e" style="-moz-hyphens:none;-webkit-hyphens:none;Margin:0;margin:0 auto;padding: 0; color:#0D3ECC;font-family:inherit;font-size:inherit;font-weight:normal;hyphens:none;line-height:inherit;overflow-wrap:normal;text-align:left; word-break:normal;width:100%; text-decoration: none;" class="body-links body-text-font">
+													Learn more 
+												</a>
+													</p>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									<!-- END TEXT -->								
+								</tbody>
+							</table>
+						</td>
+						<!-- END MAC DEVICE CONTENT -->	
+
+						<!-- BEGIN CHROMEBOOK DEVICE CONTENT -->
+						<td align="center" bgcolor="#FFFFFF" class="one-hundred-percent" style="Margin: 0; text-align: center; margin: 0 auto; padding: 0; width: 174px; display: inline-block; vertical-align: top;" width="174">
+							<table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" class="mobile-container" style="Margin: 0; border-collapse:collapse;border-spacing:0;margin:0;padding:0; text-align:center;vertical-align:top; width:173px" width="173">
+								<tbody>
+									<!-- BEGIN IMAGE -->
+									<tr>
+										<td align="center" bgcolor="#FFFFFF" class="one-hundred-percent" style="Margin: 0; text-align: center; width:23px; margin:0 auto; padding: 0; display: block;" width="23">
+											<a href="http://click.malwarebytes.com/?qs=77e936dbd666ca972fa77b3a8c8817cacdd5560a5ec627ee189546d1490cbcd20b9f1ce79c0a38246d411d370b6cc8653ff40d02689922cc" style="-moz-hyphens:none;-webkit-hyphens:none;Margin:0;margin:0 auto;padding: 0; color:#004DDC;font-family:'Locator', 'Open Sans', Helvetica,Arial,sans-serif;font-size:16px;font-weight:normal;hyphens:none;line-height:19px;overflow-wrap:normal;text-align:center; word-break:normal;width:100%; text-decoration: none;" class="body-links">
+												<img align="center" border="0" class="center-align-images padding-top-adjust-10" src="http://image.malwarebytes.com/lib/fe8c12737062017e72/m/2/9b5dd810-2a8c-4687-a552-9021230c4a57.png" alt="Chromebook" style="-ms-interpolation-mode:bicubic; margin:0 auto; display:block; outline:0; text-align:center; text-decoration:none; width:23px; padding: 0; border: 0; border-style: none; height: auto;" width="23" />
+											</a>
+										</td>
+									</tr>
+									<!-- END IMAGE -->
+
+									<!-- BEGIN WHITE SPACER -->
+									<tr>
+										<td align="center" bgcolor="#FFFFFF" class="one-hundred-percent" height="11" style="Margin: 0; margin:0; padding: 0;text-align: center; width: 100%; display: block;" width="100%">
+											<span style="line-height: 0; font-size: 0;">&nbsp;</span>
+										</td>
+									</tr>		
+									<!-- END WHITE SPACER -->
+
+									<!-- BEGIN TEXT -->
+									<tr>
+										<td align="center" class="one-hundred-percent" style="Margin: 0; margin:0;padding:0;vertical-align: middle; display: block; width: 100%; text-align: left;" width="100%">
+											<p class="body-text-font paragraph-width-adjust" style="-moz-hyphens:none;-webkit-hyphens:none;Margin:0;margin:0; padding: 0; color:#414042;font-family:'Locator', 'Open Sans', Helvetica,Arial,sans-serif;font-size:16px; hyphens:none;line-height:19px;overflow-wrap:normal; text-align:center; word-break:normal;width:100%; font-weight: bold;" width="100%">	
+												<a href="http://click.malwarebytes.com/?qs=77e936dbd666ca972fa77b3a8c8817cacdd5560a5ec627ee189546d1490cbcd20b9f1ce79c0a38246d411d370b6cc8653ff40d02689922cc" style="-moz-hyphens:none;-webkit-hyphens:none;Margin:0;margin:0 auto;padding: 0; color:#414042;font-family:inherit;font-size:inherit;font-weight:bold;hyphens:none;line-height:inherit;overflow-wrap:normal;text-align:center; word-break:normal;width:100%; text-decoration: none;" class="gray-body-links">
+													Malwarebytes for&nbsp;Chromebook
+												</a>
+            <br>
+            <a href="http://click.malwarebytes.com/?qs=77e936dbd666ca972fa77b3a8c8817cacdd5560a5ec627ee189546d1490cbcd20b9f1ce79c0a38246d411d370b6cc8653ff40d02689922cc" style="-moz-hyphens:none;-webkit-hyphens:none;Margin:0;margin:0 auto;padding: 0; color:#0D3ECC;font-family:inherit;font-size:inherit;font-weight:normal;hyphens:none;line-height:inherit;overflow-wrap:normal;text-align:left; word-break:normal;width:100%; text-decoration: none;" class="body-links body-text-font">
+													Learn more 
+												</a>
+											</p>
+										</td>
+									</tr>
+									<!-- END TEXT -->	
+
+									<!-- BEGIN WHITE SPACER -->
+									<tr>
+										<td align="center" bgcolor="#FFFFFF" class="hide_on_mobile" height="27" style="Margin: 0; margin:0; padding: 0;text-align: center; width: 100%; display: block;" width="100%">
+											<span style="line-height: 0; font-size: 0;">&nbsp;</span>
+										</td>
+									</tr>		
+									<!-- END WHITE SPACER -->						
+								</tbody>
+							</table>
+						</td>
+						<!-- END CHROMEBOOK DEVICE CONTENT -->											
+					</tr>	
+				</table>
+			</td>
+		</tr>
+		<!-- END DEVICE CONTENT -->
+
+		<!-- BEGIN DEVICE CONTENT -->
+		<tr>
+			<td align="center" bgcolor="#FFFFFF" class="one-hundred-percent" style="Margin: 0; text-align: left; margin: 0 auto; padding: 0; width: 100%;" width="100%">
+				<table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" class="mobile-container" style="Margin: 0; border-collapse:collapse;border-spacing:0;margin:0 auto;padding:0;text-align:center;vertical-align:top;width:540px; overflow: hidden; " width="540">
+					<tr>
+						<!-- BEGIN ANDROID DEVICE CONTENT -->
+						<td align="center" bgcolor="#FFFFFF" class="one-hundred-percent" style="Margin: 0; text-align: center; margin: 0 auto; padding: 0; width: 174px; display: inline-block; vertical-align: top; border: 0; border-right: 1px solid #E1E1E1;" width="174">
+							<table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" class="mobile-container" style="Margin: 0; border-collapse:collapse;border-spacing:0;margin:0;padding:0; text-align:center;vertical-align:top; width:173px" width="173">
+								<tbody>
+									<!-- BEGIN IMAGE -->
+									<tr>
+										<td align="center" bgcolor="#FFFFFF" class="one-hundred-percent" style="Margin: 0; text-align: center; width:23px; margin:0 auto; padding: 0; display: block;" width="23">
+											<a href="http://click.malwarebytes.com/?qs=77e936dbd666ca970e58963ab90127d70018f6515aaafef6184333758fd66a20b4e382a61b18ec743a7eadbbd109081db54f4ab1802364b1" style="-moz-hyphens:none;-webkit-hyphens:none;Margin:0;margin:0 auto;padding: 0; color:#004DDC;font-family:'Locator', 'Open Sans', Helvetica,Arial,sans-serif;font-size:16px;font-weight:normal;hyphens:none;line-height:19px;overflow-wrap:normal;text-align:center; word-break:normal;width:100%; text-decoration: none;" class="body-links">
+												<img align="center" border="0" class="center-align-images padding-top-adjust-10" src="http://image.malwarebytes.com/lib/fe8c12737062017e72/m/2/7eb7dbc2-6621-477c-a518-40e6fda56d3f.png" alt="Android " style="-ms-interpolation-mode:bicubic; margin:0 auto; display:block; outline:0; text-align:center; text-decoration:none; width:23px; padding: 0; border: 0; border-style: none; height: auto;" width="23" />
+											</a>
+										</td>
+									</tr>
+									<!-- END IMAGE -->
+
+									<!-- BEGIN WHITE SPACER -->
+									<tr>
+										<td align="center" bgcolor="#FFFFFF" class="one-hundred-percent" height="11" style="Margin: 0; margin:0; padding: 0;text-align: center; width: 100%; display: block;" width="100%">
+											<span style="line-height: 0; font-size: 0;">&nbsp;</span>
+										</td>
+									</tr>		
+									<!-- END WHITE SPACER -->
+
+									<!-- BEGIN TEXT -->
+									<tr>
+										<td align="center" class="one-hundred-percent" style="Margin: 0; margin:0;padding:0;vertical-align: middle; display: block; width: 100%; text-align: left;" width="100%">
+											<p class="body-text-font paragraph-width-adjust" style="-moz-hyphens:none;-webkit-hyphens:none;Margin:0;margin:0; padding: 0; color:#414042;font-family:'Locator', 'Open Sans', Helvetica,Arial,sans-serif;font-size:16px; hyphens:none;line-height:19px;overflow-wrap:normal; text-align:center; word-break:normal;width:100%; font-weight: bold;" width="100%">	
+												<a href="http://click.malwarebytes.com/?qs=77e936dbd666ca970e58963ab90127d70018f6515aaafef6184333758fd66a20b4e382a61b18ec743a7eadbbd109081db54f4ab1802364b1" style="-moz-hyphens:none;-webkit-hyphens:none;Margin:0;margin:0 auto;padding: 0; color:#414042;font-family:inherit;font-size:inherit;font-weight:bold;hyphens:none;line-height:inherit;overflow-wrap:normal;text-align:center; word-break:normal;width:100%; text-decoration: none;" class="gray-body-links">
+													Malwarebytes for&nbsp;Android
+												</a>
+            <br>
+            <a href="http://click.malwarebytes.com/?qs=77e936dbd666ca970e58963ab90127d70018f6515aaafef6184333758fd66a20b4e382a61b18ec743a7eadbbd109081db54f4ab1802364b1" style="-moz-hyphens:none;-webkit-hyphens:none;Margin:0;margin:0 auto;padding: 0; color:#0D3ECC;font-family:inherit;font-size:inherit;font-weight:normal;hyphens:none;line-height:inherit;overflow-wrap:normal;text-align:left; word-break:normal;width:100%; text-decoration: none;" class="body-links body-text-font">
+													Learn more 
+												</a>
+											</p>
+										</td>
+									</tr>
+									<!-- END TEXT -->
+								</tbody>
+							</table>
+						</td>
+						<!-- END ANDROID DEVICE CONTENT -->	
+
+						<!-- BEGIN iOS DEVICE CONTENT -->
+						<td align="center" bgcolor="#FFFFFF" class="one-hundred-percent" style="Margin: 0; text-align: center; margin: 0 auto; padding: 0; width: 174px; display: inline-block; vertical-align: top;" width="174">
+							<table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" class="mobile-container" style="Margin: 0; border-collapse:collapse;border-spacing:0;margin:0;padding:0; text-align:center;vertical-align:top; width:173px" width="173">
+								<tbody>
+									<!-- BEGIN IMAGE -->
+									<tr>
+										<td align="center" bgcolor="#FFFFFF" class="one-hundred-percent" style="Margin: 0; text-align: center; width:23px; margin:0 auto; padding: 0; display: block;" width="23">
+											<a href="http://click.malwarebytes.com/?qs=77e936dbd666ca9708081d6d427d9b12bfd8f6eca41a7d7ed4901ea7a7976120bfceee9c3ae3fd59188c197a421cac0595a8b87d51f76a4d" style="-moz-hyphens:none;-webkit-hyphens:none;Margin:0;margin:0 auto;padding: 0; color:#004DDC;font-family:'Locator', 'Open Sans', Helvetica,Arial,sans-serif;font-size:16px;font-weight:normal;hyphens:none;line-height:19px;overflow-wrap:normal;text-align:center; word-break:normal;width:100%; text-decoration: none;" class="body-links">
+												<img align="center" border="0" class="center-align-images padding-top-adjust-10" src="http://image.malwarebytes.com/lib/fe8c12737062017e72/m/2/be439b89-cee2-423c-96e2-f0fa3798edf9.png" alt="iOS " style="-ms-interpolation-mode:bicubic; margin:0 auto; display:block; outline:0; text-align:center; text-decoration:none; width:23px; padding: 0; border: 0; border-style: none; height: auto;" width="23" />
+											</a>
+										</td>
+									</tr>
+									<!-- END IMAGE -->
+
+									<!-- BEGIN WHITE SPACER -->
+									<tr>
+										<td align="center" bgcolor="#FFFFFF" class="one-hundred-percent" height="11" style="Margin: 0; margin:0; padding: 0;text-align: center; width: 100%; display: block;" width="100%">
+											<span style="line-height: 0; font-size: 0;">&nbsp;</span>
+										</td>
+									</tr>		
+									<!-- END WHITE SPACER -->
+
+									<!-- BEGIN TEXT -->
+									<tr>
+										<td align="center" class="one-hundred-percent" style="Margin: 0; margin:0 auto;padding:0;vertical-align: middle; display: block; width: 110px; text-align: left;" width="110">
+											<table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" class="mobile-container" style="Margin: 0; border-collapse:collapse;border-spacing:0;margin:0;padding:0; text-align:center;vertical-align:top; width:110px" width="110">
+												<tr>
+													<p class="body-text-font paragraph-width-adjust" style="-moz-hyphens:none;-webkit-hyphens:none;Margin:0;margin:0 auto; padding: 0; color:#414042;font-family:'Locator', 'Open Sans', Helvetica,Arial,sans-serif;font-size:16px; hyphens:none;line-height:19px;overflow-wrap:normal; text-align:center; word-break:normal;width:100%; font-weight: bold;" width="100%">	
+														<a href="http://click.malwarebytes.com/?qs=77e936dbd666ca9708081d6d427d9b12bfd8f6eca41a7d7ed4901ea7a7976120bfceee9c3ae3fd59188c197a421cac0595a8b87d51f76a4d" style="-moz-hyphens:none;-webkit-hyphens:none;Margin:0;margin:0 auto;padding: 0; color:#414042;font-family:inherit;font-size:inherit;font-weight:bold;hyphens:none;line-height:inherit;overflow-wrap:normal;text-align:center; word-break:normal;width:100%; text-decoration: none;" class="gray-body-links">
+															Malwarebytes for&nbsp;iOS
+														</a>
+              <br>
+              <a href="http://click.malwarebytes.com/?qs=77e936dbd666ca9708081d6d427d9b12bfd8f6eca41a7d7ed4901ea7a7976120bfceee9c3ae3fd59188c197a421cac0595a8b87d51f76a4d" style="-moz-hyphens:none;-webkit-hyphens:none;Margin:0;margin:0 auto;padding: 0; color:#0D3ECC;font-family:inherit;font-size:inherit;font-weight:normal;hyphens:none;line-height:inherit;overflow-wrap:normal;text-align:left; word-break:normal;width:100%; text-decoration: none;" class="body-links body-text-font">
+													Learn more 
+												</a>
+													</p>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									<!-- END TEXT -->									
+								</tbody>
+							</table>
+						</td>
+						<!-- END iOS DEVICE CONTENT -->										
+					</tr>	
+				</table>
+			</td>
+		</tr>
+		<!-- END DEVICE CONTENT -->
+
+		<!-- BEGIN GRAY SPACER -->
+		<tr>
+			<td align="center" bgcolor="#FFFFFF" class="one-hundred-percent" height="42" style="Margin: 0; margin:0; padding: 0;text-align: center; width: 100%; display: block;" width="100%">
+				<span style="line-height: 0; font-size: 0;">&nbsp;</span>
+			</td>
+		</tr>		
+		<!-- END GRAY SPACER -->	
+
+		<!-- BEGIN WHITE SPACER -->
+		<tr>
+			<td align="center" bgcolor="#F2F2F2" class="one-hundred-percent" height="42" style="Margin: 0; margin:0; padding: 0;text-align: center; width: 100%; display: block;" width="100%">
+				<span style="line-height: 0; font-size: 0;">&nbsp;</span>
+			</td>
+		</tr>		
+		<!-- END WHITE SPACER -->
+
+		<!-- BEGIN LINKS TO BOOKMARK HEADER TEXT -->
+		<tr>
+			<td align="center" bgcolor="#F2F2F2" class="one-hundred-percent" style="Margin: 0; text-align: left; width: 100%;margin:0 auto; padding: 0;" width="100%">
+				<h2 align="center" class="title-text-size title-width-adjust" style="-moz-hyphens:none; -ms-word-break:normal;-webkit-hyphens:none;Margin:0;color:#414042;font-family:'Locator', 'Open Sans', Helvetica,Arial,sans-serif; font-size:24px; font-weight:bold; hyphens:none; line-height:29px;margin:0 auto; padding:0; text-align:center; white-space:normal; word-break:normal;width: 100%; display: block;" width="100%">
+			Quick links 
+				</h2>
+			</td>
+		</tr>
+		<!-- END LINKS TO BOOKMARK HEADER TEXT -->	
+
+		<!-- BEGIN WHITE SPACER -->
+		<tr>
+			<td align="center" bgcolor="#F2F2F2" class="one-hundred-percent" height="13" style="Margin: 0; margin:0; padding: 0;text-align: center; width: 100%; display: block;" width="100%">
+				<span style="line-height: 0; font-size: 0;">&nbsp;</span>
+			</td>
+		</tr>		
+		<!-- END WHITE SPACER -->	
+
+		<!-- BEGIN BOOKMARK LINKS SECTION -->
+		<tr>
+			<td align="center" bgcolor="#F2F2F2" class="one-hundred-percent" style="Margin: 0; text-align: center;margin: 0 auto; padding: 0;" width="100%">
+				<table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" class="mobile-container" style="Margin: 0; border-collapse:collapse;border-spacing:0;margin:0 auto;padding:0;text-align:center;vertical-align:top;width:100%" width="100%">
+					<tbody>
+						<tr>
+							<td align="center" class="one-hundred-percent" style="Margin: 0; margin:0;padding:0;vertical-align: middle; display: block; width: 100%; text-align: center;" width="100%">
+								<p class="body-text-font paragraph-width-adjust" style="-moz-hyphens:none;-webkit-hyphens:none;Margin:0;margin:0 auto;padding: 0; color:#414042;font-family:'Locator', 'Open Sans', Helvetica,Arial,sans-serif;font-size:16px;font-weight:normal;hyphens:none;line-height:19px;overflow-wrap:normal;text-align:center; word-break:normal;width:100%;" width="100%">
+									<a href="http://click.malwarebytes.com/?qs=77e936dbd666ca9717da7d5191c079ed6cac258800c5f95205077bd3b00dc965ac7b5d3f3641cf86c69715e4e3dacca41fa558b5fa986fba" style="-moz-hyphens:none;-webkit-hyphens:none;Margin:0;margin:0 auto;padding: 0; color:#004DDC;font-family:inherit;font-size:inherit;font-weight:normal;hyphens:none;line-height:inherit;overflow-wrap:normal;text-align:center; word-break:normal;width:100%; text-decoration: none;" class="body-links">Support</a>
+
+									| 
+
+									<a href="http://click.malwarebytes.com/?qs=77e936dbd666ca977744483614aa3a6979a58df981da1ee33cf35c5c5585ccbb433af67744ceb8bd0a66a0111235552bf6c3e9d7a57b72db" style="-moz-hyphens:none;-webkit-hyphens:none;Margin:0;margin:0 auto;padding: 0; color:#004DDC;font-family:inherit;font-size:inherit;font-weight:normal;hyphens:none;line-height:inherit;overflow-wrap:normal;text-align:center; word-break:normal;width:100%; text-decoration: none;" class="body-links">Blog</a>
+
+									| 
+
+									<a href="http://click.malwarebytes.com/?qs=77e936dbd666ca9779ae117887a262a2796c564a2efa1653ce4a8e232dd1e60d1206887e8b53e491e163e729107ac906bfec10b0acd7a09e" style="-moz-hyphens:none;-webkit-hyphens:none;Margin:0;margin:0 auto;padding: 0; color:#004DDC;font-family:inherit;font-size:inherit;font-weight:normal;hyphens:none;line-height:inherit;overflow-wrap:normal;text-align:center; word-break:normal;width:100%; text-decoration: none;" class="body-links">Product guides</a>
+         
+         	| 
+
+									<a href="http://click.malwarebytes.com/?qs=77e936dbd666ca9739958d3fb41b771d9c2597046b7135e11936c6e136b0cd3b65b0a5ee11024979308ef65a4a4aa75e18fe39d94580d8e3" style="-moz-hyphens:none;-webkit-hyphens:none;Margin:0;margin:0 auto;padding: 0; color:#004DDC;font-family:inherit;font-size:inherit;font-weight:normal;hyphens:none;line-height:inherit;overflow-wrap:normal;text-align:center; word-break:normal;width:100%; text-decoration: none;" class="body-links">Cybersecurity basics</a>
+
+									
+								</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</td>
+		</tr>
+		<!-- END BOOKMARK LINKS SECTION -->	
+
+		<!-- BEGIN WHITE SPACER -->
+		<tr>
+			<td align="center" bgcolor="#F2F2F2" class="one-hundred-percent" height="28" style="Margin: 0; margin:0; padding: 0;text-align: center; width: 100%; display: block;" width="100%">
+				<span style="line-height: 0; font-size: 0;">&nbsp;</span>
+			</td>
+		</tr>		
+		<!-- END WHITE SPACER -->		
+
+		<!-- BEGIN TECHNICIAN LINK -->
+		<tr>
+			<td align="center" bgcolor="#F2F2F2" class="one-hundred-percent" style="Margin: 0; text-align: center;margin: 0 auto; padding: 0;" width="100%">
+				<table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" class="mobile-container" style="Margin: 0; border-collapse:collapse;border-spacing:0;margin:0 auto;padding:0;text-align:center;vertical-align:top;width:100%" width="100%">
+					<tbody>
+						<tr>
+							<td align="center" class="one-hundred-percent" style="Margin: 0; margin:0;padding:0;vertical-align: middle; display: block; width: 100%; text-align: center;" width="100%">
+								<p class="body-text-font paragraph-width-adjust" style="-moz-hyphens:none;-webkit-hyphens:none;Margin:0;margin:0 auto;padding: 0; color:#414042;font-family:'Locator', 'Open Sans', Helvetica,Arial,sans-serif;font-size:16px;font-weight:normal;hyphens:none;line-height:19px;overflow-wrap:normal;text-align:center; word-break:normal;width:100%;" width="100%">
+								Looking for our techbench program?     
+
+									<a href="http://click.malwarebytes.com/?qs=77e936dbd666ca97867ff934994f44ac9c3299d619fc94f599c89ea7bfec7f5829a42d7f67deabfae1a1ef83fd387f0dd0726392ae5cacdd" style="-moz-hyphens:none;-webkit-hyphens:none;Margin:0;margin:0 auto;padding: 0; color:#004DDC;font-family:inherit;font-size:inherit;font-weight:normal;hyphens:none;line-height:inherit;overflow-wrap:normal;text-align:center; word-break:normal;width:100%; text-decoration: none;" class="body-text-font body-links">Click here </a>
+								</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</td>
+		</tr>
+		<!-- END TECHNICIAN LINK -->
+
+		<!-- BEGIN WHITE SPACER -->
+		<tr>
+			<td align="center" bgcolor="#F2F2F2" class="one-hundred-percent" height="47" style="Margin: 0; margin:0; padding: 0;text-align: center; width: 100%; display: block;" width="100%">
+				<span style="line-height: 0; font-size: 0;">&nbsp;</span>
+			</td>
+		</tr>		
+		<!-- END WHITE SPACER -->	
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ BEGIN FOOTER -->
+		<tr>
+			<td align="center" bgcolor="#1C284C" class="one-hundred-percent" style="Margin: 0; text-align: center; margin: 0 auto; padding: 0; width: 100%; " width="100%">
+				<table role="presentation" align="center" border="0" bgcolor="#1C284C" cellpadding="0" cellspacing="0" class="mobile-container" style="Margin: 0; border-collapse:collapse;border-spacing:0;margin:0 auto;padding:0;text-align:center;vertical-align:top;width:100%; background-color: #1C284C;" width="100%">
+					<!-- BEGIN BLUE SPACER -->
+					<tr>
+						<td align="center" bgcolor="#1C284C" class="one-hundred-percent" height="34" style="Margin: 0; margin:0; padding: 0;text-align: center; width: 100%; display: block;" width="100%">
+							<span style="line-height: 0; font-size: 0;">&nbsp;</span>
+						</td>
+					</tr>		
+					<!-- END BLUE SPACER -->	
+
+					<!-- BEGIN CAN-SPAM LINKS SECTION -->
+					<tr>
+						<td align="center" bgcolor="#1C284C" class="one-hundred-percent" style="Margin: 0; text-align: center;margin: 0 auto; padding: 0;" width="100%">
+							<table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" class="mobile-container" style="Margin: 0; border-collapse:collapse;border-spacing:0;margin:0 auto;padding:0;text-align:center;vertical-align:top;width:100%" width="100%">
+								<tbody>
+									<tr>
+										<td align="center" class="one-hundred-percent" style="Margin: 0; margin:0;padding:0;vertical-align: middle; display: block; width: 100%; text-align: center;" width="100%">
+											<p class="title-width-adjust footer-text-size " style="-moz-hyphens:none;-webkit-hyphens:none;Margin:0;margin:0 auto;padding: 0; color:#ffffff;font-family:'Locator', 'Open Sans', Helvetica,Arial,sans-serif;font-size:12px;font-weight:normal;hyphens:none;line-height:14px;overflow-wrap:normal;text-align:center; word-break:normal;width:100%;" width="100%">
+												<a href="http://click.malwarebytes.com/?qs=77e936dbd666ca972143468c5186ef4fa5f5536261dc4ad4125ca402b5a9efdb7e7d7ed572bb9665a4f312f4f8dcc96c2f6a7c4c014ca12d" style="-moz-hyphens:none;-webkit-hyphens:none;Margin:0;margin:0 auto;padding: 0; color:#ffffff;font-family:inherit;font-size:inherit;font-weight:normal;hyphens:none;line-height:inherit;overflow-wrap:normal;text-align:center; word-break:normal;width:100%; text-decoration: none;" class="white-footer-links">Privacy Policy</a>
+
+												| 
+
+												<a href="http://click.malwarebytes.com/?qs=77e936dbd666ca97766ccf79fd45ad105305887d6ee761d5cc365d783b19d4bc3c5b17d61382ec69604f6df69fc9865c313e9b0cec9018d1" style="-moz-hyphens:none;-webkit-hyphens:none;Margin:0;margin:0 auto;padding: 0; color:#ffffff;font-family:inherit;font-size:inherit;font-weight:normal;hyphens:none;line-height:inherit;overflow-wrap:normal;text-align:center; word-break:normal;width:100%; text-decoration: none;" class="white-footer-links">Terms of Service</a>
+
+												| 
+
+												<a href="http://click.malwarebytes.com/unsub_center.aspx?qs=c4c2b2b35f6e88a99ca7f2735714363c90f0af27710ba15f2cdbca3d7e75d7bb866536ff8d57769f54021607855eb5a4e3576feb050bb958f79e6d3c11f2d926878d4899a5feaaa7" style="-moz-hyphens:none;-webkit-hyphens:none;Margin:0;margin:0 auto;padding: 0; color:#ffffff;font-family:inherit;font-size:inherit;font-weight:normal;hyphens:none;line-height:inherit;overflow-wrap:normal;text-align:center; word-break:normal;width:100%; text-decoration: none;" class="white-footer-links">Unsubscribe</a>            
+           
+											</p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</td>
+					</tr>
+					<!-- END CAN-SPAM LINKS SECTION -->	
+
+					<!-- BEGIN BLUE SPACER -->
+					<tr>
+						<td align="center" bgcolor="#1C284C" class="one-hundred-percent" height="24" style="Margin: 0; margin:0; padding: 0;text-align: center; width: 100%; display: block;" width="100%">
+							<span style="line-height: 0; font-size: 0;">&nbsp;</span>
+						</td>
+					</tr>		
+					<!-- END BLUE SPACER -->		
+
+					<!-- BEGIN COMPANY INFORMATION -->
+					<tr>
+						<td align="center" bgcolor="#1C284C" class="one-hundred-percent" style="Margin: 0; text-align: center;margin: 0 auto; padding: 0;" width="100%">
+							<table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" class="mobile-container" style="Margin: 0; border-collapse:collapse;border-spacing:0;margin:0 auto;padding:0;text-align:center;vertical-align:top;width:100%" width="100%">
+								<tbody>
+									<tr>
+										<td align="center" class="one-hundred-percent" style="Margin: 0; margin:0;padding:0;vertical-align: middle; display: block; width: 100%; text-align: center;" width="100%">
+											<p class="paragraph-width-adjust footer-text-size" style="-moz-hyphens:none;-webkit-hyphens:none;Margin:0;margin:0 auto;padding: 0; color:#ffffff;font-family:'Locator', 'Open Sans', Helvetica,Arial,sans-serif;font-size:12px;font-weight:normal;hyphens:none;line-height:14px;overflow-wrap:normal;text-align:center; word-break:normal;width:100%;" width="100%">
+												&#169; <span class="apple-links-footer">2019 Malwarebytes</span>
+												
+												<br>
+
+												<span class="apple-links-footer">3979 Freedom Circle, 12th Floor, Santa&nbsp;Clara,&nbsp;CA&nbsp;95054</span>
+											</p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</td>
+					</tr>
+					<!-- END COMPANY INFORMATION -->
+
+					<!-- BEGIN BLUE SPACER -->
+					<tr>
+						<td align="center" bgcolor="#1C284C" class="one-hundred-percent" height="24" style="Margin: 0; margin:0; padding: 0;text-align: center; width: 100%; display: block;" width="100%">
+							<span style="line-height: 0; font-size: 0;">&nbsp;</span>
+						</td>
+					</tr>		
+					<!-- END BLUE SPACER -->	
+					
+					<!-- BEGIN SOCIAL LINKS -->
+							<tr>
+						<td align="center" bgcolor="#1C284C" class="one-hundred-percent" style="Margin: 0; text-align: left; margin: 0 auto; padding: 0; width: 100%;" width="100%">
+							<table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" class="mobile-social icon-size-adjust" style="Margin: 0; border-collapse:collapse;border-spacing:0;margin:0 auto;padding:0;text-align:center;vertical-align:top;width:100%;" width="100%">
+								<tr>
+									<!-- BEGIN FACEBOOK IMAGE -->
+									<td align="center" bgcolor="#1C284C" class="facebook-icon-size" style="Margin: 0; text-align: center; width: 68px; margin:0; padding: 0; display: inline-block; vertical-align:top;" width="68">
+										<a href="http://click.malwarebytes.com/?qs=77e936dbd666ca975aebe2c41981d922c4092b31a0fa53b14ee5001dc4e76f92855d4af3917ecd4c81396806d7d3da15c6f4fe7b8f77d3a7" style="-moz-hyphens:none;-webkit-hyphens:none;Margin:0;margin:0 auto;padding: 0; color:#ffffff;font-family:'Locator', 'Open Sans', Helvetica,Arial,sans-serif;font-size:12px;font-weight:normal;hyphens:none;line-height:14px;overflow-wrap:normal;text-align:center; word-break:normal;width:100%; text-decoration: none;" class="white-footer-links">
+											<img class="" align="center" alt="Facebook" border="0" class="" src="http://image.malwarebytes.com/lib/fe8c12737062017e72/m/1/2018_23_05-Social-image-11.png" style="-ms-interpolation-mode:bicubic; margin:0 auto; display:block; outline:0; text-align:center; text-decoration:none; width: 10.58px; padding: 0; border: 0; border-style: none; height: auto; vertical-align: bottom;" title="Facebook" width="10.58" />
+										</a>		
+									</td>
+									<!-- END FACEBOOK IMAGE -->	
+
+									<!-- BEGIN TWITTER IMAGE -->
+									<td align="center" bgcolor="#1C284C" class="icon-size-adjust" style="Margin: 0; text-align: center; width: 68px; margin:0; padding: 0; display: inline-block; vertical-align:middle;" width="68">
+										<a href="http://click.malwarebytes.com/?qs=77e936dbd666ca974f8959be11e131098d560fad2814c130152e7694d5c0163cd8d7e64b940d61996a7323d1e43784cea73c6a0c5b046779" style="-moz-hyphens:none;-webkit-hyphens:none;Margin:0;margin:0 auto;padding: 0; color:#ffffff;font-family:'Locator', 'Open Sans', Helvetica,Arial,sans-serif;font-size:12px;font-weight:normal;hyphens:none;line-height:14px;overflow-wrap:normal;text-align:center; word-break:normal;width:100%; text-decoration: none;" class="white-footer-links">
+											<img align="center" alt="Twitter" border="0" class="" src="http://image.malwarebytes.com/lib/fe8c12737062017e72/m/1/2018_23_05-Social-image-12.png" style="-ms-interpolation-mode:bicubic; margin:0 auto; display:block; outline:0; text-align:center; text-decoration:none; width: 20.33px; padding: 0; border: 0; border-style: none; height: auto; vertical-align: bottom;" title="Twitter" width="20.33" />
+										</a>
+									</td>
+									<!-- END TWITTER IMAGE -->	
+
+									<!-- BEGIN LINKEDIN IMAGE -->
+									<td align="center" bgcolor="#1C284C" class="icon-size-adjust" style="Margin: 0; text-align: center; width: 68px; margin:0; padding: 0; display: inline-block; vertical-align:top;" width="68">
+										<a href="http://click.malwarebytes.com/?qs=77e936dbd666ca97dabd689003ab4f922570d684cf9ef4495ae615fe52c49d5bc97a2ad738c161710e91ff109ebf6daee285b4b336348c2c" style="-moz-hyphens:none;-webkit-hyphens:none;Margin:0;margin:0 auto;padding: 0; color:#ffffff;font-family:'Locator', 'Open Sans', Helvetica,Arial,sans-serif;font-size:12px;font-weight:normal;hyphens:none;line-height:14px;overflow-wrap:normal;text-align:center; word-break:normal;width:100%; text-decoration: none;" class="white-footer-links">
+											<img align="center" alt="LinkedIn" border="0" class="" src="http://image.malwarebytes.com/lib/fe8c12737062017e72/m/1/2018_23_05-Social-image-13.png" style="-ms-interpolation-mode:bicubic; margin:0 auto; display:block; outline:0; text-align:center; text-decoration:none; width: 20.33px; padding: 0; border: 0; border-style: none; height: auto; vertical-align: bottom;" title="LinkedIn" width="20.33" />
+										</a>
+									</td>
+									<!-- END LINKEDIN IMAGE -->			
+									
+									<!-- BEGIN INSTAGRAM IMAGE -->
+									<td align="center" bgcolor="#1C284C" class="icon-size-adjust" style="Margin: 0; text-align: center; width: 68px; margin:0; padding: 0; display: inline-block; vertical-align:top;" width="68">
+										<a href="http://click.malwarebytes.com/?qs=77e936dbd666ca976250dc8a29228b475b7082f44d4250dd382a9a94f6439301e22f9c25360db015b92a904d3eb5ab03dd01f3363d7f53ea" style="-moz-hyphens:none;-webkit-hyphens:none;Margin:0;margin:0 auto;padding: 0; color:#ffffff;font-family:'Locator', 'Open Sans', Helvetica,Arial,sans-serif;font-size:12px;font-weight:normal;hyphens:none;line-height:14px;overflow-wrap:normal;text-align:center; word-break:normal;width:100%; text-decoration: none;" class="white-footer-links">
+											<img align="center" alt="Instagram" border="0" class="" src="http://image.malwarebytes.com/lib/fe8c12737062017e72/m/1/2018_23_05-Social-image-14.png" style="-ms-interpolation-mode:bicubic; margin:0 auto; display:block; outline:0; text-align:center; text-decoration:none; width: 20.33px; padding: 0; border: 0; border-style: none; height: auto; vertical-align: bottom;" title="Instagram" width="20.33" />
+										</a>
+									</td>
+									<!-- END INSTAGRAM IMAGE -->		
+								</tr>	
+							</table>
+						</td>
+					</tr>
+					<!-- END SOCIAL LINKS -->
+
+					<!-- BEGIN BLUE SPACER -->
+					<tr>
+						<td align="center" bgcolor="#1C284C" class="one-hundred-percent" height="34" style="Margin: 0; margin:0; padding: 0;text-align: center; width: 100%; display: block;" width="100%">
+							<span style="line-height: 0; font-size: 0;">&nbsp;</span>
+						</td>
+					</tr>		
+					<!-- END BLUE SPACER -->
+				</table>
+			</td>
+		</tr>														
+	</table>
+	<!-- END BODY CONTENT STYLING -->
+
+	<!-- ANDROID FIX -->
+	<table role="presentation" cellpadding="0" cellspacing="0" border="0" class="hide">
+		<tr>
+		    <td height="1" class="hide" style="min-width:700px; font-size:0px;line-height:0px;">
+		        <img alt="spacer" height="1" src="spacer.gif" style="min-width: 700px; text-decoration: none; border: none; -ms-interpolation-mode: bicubic;" />
+		    </td>
+		</tr>
+	</table>
+	<!-- ANDROID FIX -->
+</body>
+
+</html>
+<img src="http://click.malwarebytes.com/open.aspx?ffcb10-fe9516767064007b76-fdfe15747560067f7614797d-fe8c12737062017e72-feca15707461037a-fe25167971610d75761472-ff621d7277" width="1" height="1">

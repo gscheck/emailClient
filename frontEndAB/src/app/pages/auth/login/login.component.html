@@ -1,0 +1,40 @@
+<div class="content" fxLayoutAlign = "center center">
+    <form [formGroup]="form">
+      <mat-card class="login-card">
+        <mat-card-title fxLayoutAlign = "center center">
+        Email Client Application<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Login
+        </mat-card-title>
+        <mat-card-content>
+          <div fxLayout="column">
+            <mat-form-field fxFlex="100%">
+              <input
+                matInput
+                formControlName='user_name'
+                placeholder="Username"
+                type="text">
+            </mat-form-field>
+            <mat-form-field fxFlex="100%">
+              <input
+                matInput
+                formControlName='password'
+                placeholder="Password"
+                type="password">
+            </mat-form-field>
+            <div fxLayoutAlign="center center">
+              <button 
+                (click)='onSubmit()'
+                [disabled]="!form.valid"
+                mat-raised-button 
+                color="primary">Sign In
+              </button>
+            <button 
+                (click)='navigateToRegistrationForm()'
+                mat-raised-button>Register
+            </button>
+          </div>
+         </div>
+        </mat-card-content>
+      </mat-card>
+    </form>
+  </div>

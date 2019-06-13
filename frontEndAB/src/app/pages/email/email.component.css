@@ -1,0 +1,13 @@
+email-list{
+  overflow-y: auto;
+}
+
+.button-group {
+  background-color: rgb(220,220,220);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.email-container {
+  padding: 20px;
+}
